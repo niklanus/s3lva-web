@@ -1,0 +1,49 @@
+$main: #0e76bc;
+$gray: #373739;
+$darkgray: #242424;
+$blue: #1993BE;
+
+@mixin hover {
+  -webkit-transition: all 250ms;
+  -moz-transition:    all 250ms;
+  -o-transition:      all 250ms;
+  transition:         all 250ms;
+}
+
+@mixin hover-medium {
+  -webkit-transition: all 350ms;
+  -moz-transition:    all 350ms;
+  -o-transition:      all 350ms;
+  transition:         all 350ms;
+}
+
+@mixin hover-slow {
+  -webkit-transition: all 500ms;
+  -moz-transition:    all 500ms;
+  -o-transition:      all 500ms;
+  transition:         all 500ms;
+}
+
+@mixin hover-color {
+  -webkit-transition: color 250ms;
+  -moz-transition:    color 250ms;
+  -o-transition:      color 250ms;
+  transition:         color 250ms;
+}
+
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin gradient($fromColor, $toColor) {
+  background-color: $toColor;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
