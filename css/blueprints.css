@@ -255,7 +255,7 @@ th {
     width: 970px; } }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px; } }
+    width: 1023px; } }
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -938,14 +938,14 @@ th {
         -o-transition: all 250ms;
         transition: all 250ms; }
         .nav-main ul li a:hover {
-          color: #1993BE; }
+          color: #3fa9f5; }
     .nav-main ul li.nav-proyect {
       font-size: 1.2em;
       margin-bottom: 12px; }
       .nav-main ul li.nav-proyect a {
         color: #999999; }
         .nav-main ul li.nav-proyect a:hover {
-          color: #1993BE; }
+          color: #3fa9f5; }
     .nav-main ul li.nav-proyect.last {
       margin-bottom: 18px; }
 
@@ -953,7 +953,7 @@ th {
   transform: translateY(0); }
 
 .nav-visible .nav-btn:hover .nav-hover {
-  background-color: #1993BE; }
+  background-color: #3fa9f5; }
 
 .morphext > span {
   display: none; }
@@ -1115,9 +1115,9 @@ header {
   z-index: 100; }
 
 .title {
-  font-size: 3.6em;
-  color: #1993BE;
-  font-weight: 500;
+  font-size: 4em;
+  color: #3fa9f5;
+  font-weight: bold;
   margin: 0 0 40px 0;
   line-height: 1; }
 
@@ -1222,7 +1222,7 @@ header {
 
 .intro-1 {
   display: block;
-  background: #1993BE;
+  background: #3fa9f5;
   background-size: cover;
   position: relative; }
 
@@ -1251,7 +1251,7 @@ header {
   position: absolute;
   bottom: 5%; }
   .intro-btn-container .btn {
-    color: #1993BE; }
+    color: #3fa9f5; }
     .intro-btn-container .btn:hover {
       color: white; }
 
@@ -1304,17 +1304,61 @@ header {
   .intro-2-msg p {
     font-size: 2.4em; }
     .intro-2-msg p strong {
-      color: #1993BE; }
+      color: #3fa9f5; }
 
 .mundo {
   position: relative;
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   background-color: white;
   z-index: 2; }
+  .mundo .title-blue {
+    height: auto;
+    background-color: #3fa9f5;
+    padding: 140px 0 10px 0;
+    margin: 0 0 40px 0; }
+    .mundo .title-blue .title {
+      color: #242424;
+      margin: 0; }
   .mundo p {
     font-size: 1em; }
 
 .subtitle-highlight {
-  max-width: 160px;
-  font-size: 1.3em;
-  line-height: 1.4; }
+  width: 160px;
+  position: relative; }
+  .subtitle-highlight p {
+    font-size: 1.3em;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: bold; }
+  .subtitle-highlight .decoration {
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #3fa9f5;
+    margin: 0 0 10px 0; }
+
+.points-container {
+  margin: 50px 0 0 0; }
+
+.point {
+  width: 290px;
+  float: left;
+  clear: both; }
+  .point .number {
+    font-size: 4em;
+    margin: 0;
+    font-weight: bold;
+    color: #3fa9f5;
+    position: relative;
+    top: -14px;
+    left: -5px; }
+  .point .subtitle {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: bold; }
+  .point .text {
+    font-size: 1.2em;
+    font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif; }
+  .point.alt {
+    float: right;
+    clear: both; }
