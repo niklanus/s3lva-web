@@ -40,6 +40,35 @@ header
 	position: absolute
 	top: 0
 	z-index: 100
+	@include hover-slow
+
+	&.header-fixed
+		position: fixed
+		top: 0
+		padding: 0 0 20px 0
+		//background-color: rgba(0,0,0,0.25)
+		opacity: 0
+		background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)
+		translate3d: (0,0,0)
+		z-index: 99
+
+		.header-logo, .nav-btn
+			transform: translateY(-20px)
+
+		&.visible
+			opacity: 1
+
+			.header-logo, .nav-btn
+				transform: translateY(0)
+
+	.header-logo
+		width: 120px
+		height: 30px
+		float: left
+		display: inline-block
+		position: relative
+		top: 25px
+		@include hover-slow
 
 .title
 	font-size: 4em
@@ -61,6 +90,7 @@ header
 	text-align: center
 	position: relative
 	border-radius: 35px
+	translate3d: (0,0,0)
 	@include hover-slow
 	
 	.nav-hover
@@ -148,6 +178,7 @@ header
 	background: $blue
 	background-size: cover
 	position: relative
+	z-index: 4
 
 .intro-main
 	width: 100%
@@ -234,15 +265,17 @@ header
 	background-size: cover
 	z-index: -1
 
-	video
-		width: 100%
-		position: absolute
-		display: block
+	@media only screen and (max-width: 767px)
+		background-image: url(../img/intro-2-bg-mobile.jpg)
+		
+		video
+			display: none
 		
 .intro-2-msg
 	position: relative
 	padding: 50px 0
 	background-color: rgba(255,255,255,0.95)
+	z-index: 1
 
 	p
 		font-size: 2.1em
@@ -256,11 +289,12 @@ header
 	position: relative
 	padding: 0 0 80px 0
 	z-index: 2
+	overflow: hidden
 	
 	.title-blue
 		height: auto
 		background-color: rgba(63,169,245,0.9)
-		padding: 140px 0 10px 0
+		padding: 180px 0 10px 0
 		margin: 0
 		position: relative
 
@@ -273,9 +307,18 @@ header
 
 	.bg
 		background-color: white
-	
-	.container
 		padding: 60px 0 80px 0
+		position: relative
+
+	.pattern-1
+		width: 100%
+		position: absolute
+		z-index: 0
+		bottom: 0
+		opacity: 0.25
+		z-index: 0
+
+
 
 .subtitle-highlight
 	width: 200px
@@ -303,6 +346,7 @@ header
 	float: left
 	clear: both
 	position: relative
+	z-index: 2
 
 	.number
 		font-size: 4.5em
