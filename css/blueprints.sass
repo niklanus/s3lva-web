@@ -44,22 +44,17 @@ header
 
 	&.header-fixed
 		position: fixed
-		top: 0
+		top: -100px
 		padding: 0 0 20px 0
 		//background-color: rgba(0,0,0,0.25)
 		opacity: 0
 		background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)
-		translate3d: (0,0,0)
 		z-index: 99
-
-		.header-logo, .nav-btn
-			transform: translateY(-20px)
 
 		&.visible
 			opacity: 1
+			top: 0
 
-			.header-logo, .nav-btn
-				transform: translateY(0)
 
 	.header-logo
 		width: 120px
@@ -71,11 +66,16 @@ header
 		@include hover-slow
 
 .title
-	font-size: 4em
-	color: $blue
+	font-size: 5em
+	color: $darkgray
 	font-weight: bold
 	margin: 0 0 40px 0
 	line-height: 1
+	letter-spacing: -0.025em
+
+	span
+		display: block
+
 
 .nav-btn
 	width: 80px
@@ -160,8 +160,8 @@ header
 	line-height: 44px
 
 	&.btn-main
-		color: white
-		background-color: $darkgray
+		color: $blue
+		background-color: white
 		padding: 0px 20px
 		font-weight: 500
 		background-clip: padding-box
@@ -195,13 +195,26 @@ header
 		height: auto
 		margin: 0 auto 50px auto
 		display: block
+		padding: 30px 0 50px 0
+
+		@media only screen and (max-height: 640px)
+			padding: 0
+
+
 
 	p
 		max-width: 600px
 		font-size: 1.3em
-		color: $darkgray
+		color: white
 		margin: 0 auto 10px auto
 		padding: 0 40px
+
+		img
+			display: block
+			width: 50px
+			height: auto
+			margin: 0 auto
+			padding: 20px 0
 
 .intro-btn-container
 	width: 100%
@@ -213,7 +226,7 @@ header
 		
 
 		&:hover
-			color: white
+			transform: scale(1.1)
 
 .intro-more
 	width: 100%
@@ -273,8 +286,6 @@ header
 		
 .intro-2-msg
 	position: relative
-	padding: 50px 0
-	background-color: rgba(255,255,255,0.95)
 	z-index: 1
 
 	p
@@ -283,63 +294,86 @@ header
 		strong
 			color: $blue
 
+	.part-1
+		padding: 70px 0
 
 
-.mundo
+		p
+			color: white
+			margin: 0
+
+			strong
+				color: $blue
+
+	.part-2
+		padding: 50px 0
+		background-color: rgba(255,255,255,0.95)
+
+
+.clear-1
+	width: 100%
+	height: 900px
+	clear: both
+
+
+
+.mundo, .aboutus
 	position: relative
-	padding: 0 0 80px 0
+	padding: 60px 0 80px 0
 	z-index: 2
 	overflow: hidden
-	
-	.title-blue
-		height: auto
-		background-color: rgba(63,169,245,0.9)
-		padding: 180px 0 10px 0
-		margin: 0
-		position: relative
+	background-color: white
+	margin-top: 200px
 
-		.title
-			color: $darkgray
-			margin: 0
+	.title
+		margin: 0
 
 	p
 		font-size: 1em
 
-	.bg
-		background-color: white
-		padding: 60px 0 80px 0
+	.container
 		position: relative
 
-	.pattern-1
-		width: 100%
+	.title-alt
+		font-size: 5em
+		color: lighten($blue,24)
+		font-weight: bold
+		line-height: 1
+		letter-spacing: -0.025em
 		position: absolute
-		z-index: 0
-		bottom: 0
-		opacity: 0.25
-		z-index: 0
-
+		right: 0
+		top: 0
+		text-align: right
+		margin: 0
 
 
 .subtitle-highlight
 	width: 200px
 	position: relative
+	margin-bottom: 70px
 
-	p
+	.main-text
 		font-size: 1.6em
-		line-height: 1.4
+		line-height: 1.15
 		margin: 0
 		font-weight: bold
+		text-decoration: underline
+
+	.extra-text
+		font-size: 1.3em
+		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
+
 
 	.decoration
 		display: block
-		width: 50%
-		height: 4px
+		width: 30%
+		height: 8px
 		background: $blue
 		margin: 0 0 10px 0
 
 .points-container
 	max-width: 767px
-	margin: 100px auto 0 auto
+	margin: 80px auto 0 auto
 
 .point
 	width: 290px
@@ -369,3 +403,48 @@ header
 	&.alt
 		float: right
 		clear: both
+
+
+
+.aboutus
+	margin-top: 0
+
+	.subtitle-highlight
+		width: 250px
+
+	.clients
+		width: 100%
+		height: auto
+
+
+.proyects
+	background-color: white
+
+	.featured-title
+		width: 100%
+		height: 600px
+		background: white url(../img/line-pattern.png) repeat
+
+		.title-container
+			background-color: white
+			padding: 40px
+			display: inline-block
+			position: relative
+			margin-top: 70px
+			left: -10%
+
+			@media only screen and (max-width: 1400px)
+				left: -5%
+
+			@media only screen and (max-width: 1280px)
+				left: auto
+
+			.title
+				margin-bottom: 14px
+
+			.decoration
+				display: block
+				width: 85px
+				height: 10px
+				background: $blue
+				margin: 0 0 10px 0

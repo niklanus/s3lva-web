@@ -175,6 +175,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/clients.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88405,
+		"inputAbbreviatedPath": "\/img\/clients.png",
+		"outputAbbreviatedPath": "\/img\/clients.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/header-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -226,6 +237,17 @@
 		"initialSize": 201733,
 		"inputAbbreviatedPath": "\/img\/intro-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/intro-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/line-pattern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 990,
+		"inputAbbreviatedPath": "\/img\/line-pattern.png",
+		"outputAbbreviatedPath": "\/img\/line-pattern.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

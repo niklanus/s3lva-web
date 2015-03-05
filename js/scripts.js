@@ -4,7 +4,7 @@ $(window).on("load resize",function(e){
 	$('.intro-2').height(viewportHeight);
 
 	$('.intro-2-msg').css('top', viewportHeight);
-	$('.mundo').css('top', viewportHeight);
+	// $('.mundo').css('top', viewportHeight);
 
 	/*
 	if($(window).width() <= 680){
@@ -75,10 +75,12 @@ var minutes = date.getMinutes();
 var month = date.getMonth();
 var day = date.getDate();
 var year = date.getFullYear();
-var monthNames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]; 
-document.getElementById("date").innerHTML = day+" de "+monthNames[month]+" de "+year;
-document.getElementById("year").innerHTML = year;
+var dayname = date.getDay();
+var week=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"]; 
+var monthNames = [ "enero", "febrero", "marzo", "abril", "mayo", "junio",
+    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" ]; 
+document.getElementById("date").innerHTML = week[dayname]+"<br>"+day+" de <br>"+monthNames[month]+"<br>de<br>"+year;
+//document.getElementById("year").innerHTML = year;
 /*
 var headerWaypoint = $('#intro-2').waypoint(function(direction) {
 	$('header').toggleClass("header-fixed");
@@ -101,18 +103,14 @@ var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0",
 	}))
 	// .addIndicators()
 	.addTo(controller);
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#intro-2", triggerHook: "0", offset: 0, duration: vh*2})
-	.setPin(".intro-2-bgvideo")
-	// .addIndicators()
-	.addTo(controller);*/
 
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8", offset: 0, duration: 193})
 	.setTween(TweenMax.from('#mundo-parallax-1', 0.5, {
    		paddingTop: 20
 	}))
-	// .addIndicators()
 	.addTo(controller);
+*/
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8", offset: 200, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-2', 0.5, {
@@ -198,14 +196,12 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 0, duration: 1000})
-	.setTween(TweenMax.from('#mundo-parallax-8', 0.5, {
-		opacity: 0,
-		bottom: 0,
-		scale: 10
-	}))
-	// .addIndicators()
-	.addTo(controller);
+
+
+
+
+
+
 
 var waypoint1 = $('.intro-2-msg').waypoint(function(direction) {
 	$('.intro-2-msg p').blast({ delimiter: "word" }).velocity("transition.slideDownIn", {
