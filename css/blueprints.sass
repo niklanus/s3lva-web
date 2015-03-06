@@ -45,10 +45,11 @@ header
 	&.header-fixed
 		position: fixed
 		top: -100px
-		padding: 0 0 20px 0
+		padding: 0
 		//background-color: rgba(0,0,0,0.25)
 		opacity: 0
-		background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)
+		//background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)
+		background: rgba(63,169,245,0.9)
 		z-index: 99
 
 		&.visible
@@ -151,6 +152,9 @@ header
 	.nav-btn-3
 		transform: rotate(-45deg)
 		top: 10px
+
+	.header-fixed
+		background-color: transparent
 
 .btn
 	display: inline-block
@@ -320,11 +324,24 @@ header
 
 	.part-1
 		padding: 70px 0
+		margin-bottom: 40px
+		
+		.col-1, .col-2
+			display: inline-block
+			float: left
+			width: 50%
 
+		.col-1 p
+			text-align: right
+
+		.col-2 p
+			text-align: left
+			
 
 		p
 			color: white
 			margin: 0
+			text-align: center
 
 			strong
 				color: $blue
@@ -333,13 +350,45 @@ header
 		padding: 50px 0
 		background-color: rgba(255,255,255,0.95)
 
+.typed-cursor
+	opacity: 1
+	-webkit-animation: blink 0.7s infinite
+	-moz-animation: blink 0.7s infinite
+	animation: blink 0.7s infinite
+
+@keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+
+
+@-webkit-keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+
+	100%
+		opacity: 1
+
+@-moz-keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
 
 .clear-1
 	width: 100%
 	height: 900px
 	clear: both
 
-
+.mundo
+	padding-top: 140px !important
 
 .mundo, .aboutus
 	position: relative
@@ -378,7 +427,7 @@ header
 
 	.main-text
 		font-size: 1.6em
-		line-height: 1.15
+		line-height: 1
 		margin: 0
 		font-weight: bold
 		text-decoration: underline
@@ -495,14 +544,7 @@ header
 	.title
 		margin: 0 0 15px 0
 		position: relative
-		left: -90px
 		z-index: 5
-
-		@media only screen and (max-width: 1240px)
-			left: -20px
-
-		@media only screen and (max-width: 820px)
-			left: 0
 
 		.decoration
 			width: 80px
@@ -532,6 +574,16 @@ header
 		padding-left: 20px
 
 	&.proyect-1
+		.title
+			left: -90px
+			margin-bottom: 50px
+
+			@media only screen and (max-width: 1240px)
+				left: -20px
+
+			@media only screen and (max-width: 820px)
+				left: 0
+
 		.proyect-decoration
 			width: 220px
 			position: absolute
@@ -539,7 +591,15 @@ header
 			left: 12%
 			z-index: 0
 
+		.video-container
+			video
+				width: 100%
+
+		.parallax-container
+			position: relative
+
 	&.proyect-2
+
 		.title
 			text-align: right
 			top: 40px
@@ -551,6 +611,12 @@ header
 			top: 0
 			right: -15%
 			z-index: 0
+
+		.video-container
+			width: 100%
+
+			video
+				width: 100%
 
 		.btn-proyects
 			position: relative
@@ -565,6 +631,9 @@ header
 				top: auto
 
 	&.proyect-3
+		padding-top: 0px
+		margin-bottom: 50px
+
 		.title
 			margin-bottom: 80px
 
@@ -580,7 +649,7 @@ header
 
 			.extra-text, .righted
 				position: relative
-				left: 20%
+				left: 35%
 
 				@media only screen and (max-width: 991px)
 					left: 16%
@@ -588,17 +657,151 @@ header
 				@media only screen and (max-width: 767px)
 					left: auto
 
-
+		
+		@media only screen and (max-width: 767px)
+			.righted
+				text-align: center
 
 		.video-container
 			width: 340px
 			height: 746px
 			background: url(../img/work/3-bg.jpg)
 			float: right
+			z-index: 2
+			overflow: hidden
+
+			@media only screen and (max-width: 767px)
+				float: none
+				margin: 0 auto
+				position: relative
+				left: -7px
 
 			video
 				width: 295px
-				height: 540px
+				/* height: 540px */
 				left: 29px
-				top: 107px
+				top: 100px
 				position: relative
+
+	&.proyect-4
+		.title
+			margin-bottom: 40px
+			text-align: right
+
+		.subtitle-highlight
+			.decoration
+				float: right
+				clear: both
+
+			.main-text
+				float: right
+				display: block
+				clear: both
+				margin-bottom: 20px
+				text-align: right
+
+			.extra-text
+				clear: both
+
+		.parallax-container
+			position: relative
+			min-height: 630px
+
+			.video-container
+				width: 400px
+				float: right
+				position: relative
+				right: 20px
+				top: 60px
+				z-index: 2
+
+				video
+					width: 100%
+
+			#proyects-parallax-4-3, #proyects-parallax-4-4
+				position: absolute
+				bottom: 0
+			
+			#proyects-parallax-4-3
+				z-index: 1
+			#proyects-parallax-4-4
+				z-index: 0
+
+	&.proyect-6
+		.title
+			margin-bottom: 40px
+			text-align: right
+
+		.subtitle-highlight
+			.decoration
+				float: right
+				clear: both
+
+			.main-text
+				float: right
+				display: block
+				clear: both
+				margin-bottom: 20px
+				text-align: right
+
+			.extra-text
+				clear: both
+
+		.parallax-container
+			position: relative
+			margin-right: 20px
+
+			#proyects-parallax-6-3
+				width: 100%
+				height: auto
+
+			#proyects-parallax-6-4
+				width: 55%
+				position: absolute
+				right: -30px
+				bottom: -60px
+
+	&.proyect-7
+		.title
+			margin-bottom: 20px
+		
+		.video-col
+			margin-top: 200px
+
+		.subtitle-highlight
+			.extra-text
+				padding-left: 20px
+
+#proyects-parallax-2-3, #proyects-parallax-2-4, #proyects-parallax-2-5
+	display: inline-block
+	position: relative
+
+#proyects-parallax-2-3
+	left: 20px
+
+#proyects-parallax-2-4
+	float: right
+	right: 20px
+
+#proyects-parallax-2-5
+	left: 22%
+	top: -30px
+
+
+.contact
+	padding-top: 100px
+	background: white
+
+.contact-title
+	padding: 44px 40px 40px 40px
+	border: 2px solid black
+	display: inline-block
+
+	.title
+		font-size: 3em
+		text-transform: uppercase
+		margin: 0 0 0 100px
+
+.contact-container
+	width: 800px
+	margin: 0 auto

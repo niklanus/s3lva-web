@@ -318,6 +318,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/work\/2-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26174,
+		"inputAbbreviatedPath": "\/img\/work\/2-1.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/2-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/2-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57480,
+		"inputAbbreviatedPath": "\/img\/work\/2-2.png",
+		"outputAbbreviatedPath": "\/img\/work\/2-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/2-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 114514,
+		"inputAbbreviatedPath": "\/img\/work\/2-3.png",
+		"outputAbbreviatedPath": "\/img\/work\/2-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/work\/2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -325,6 +358,39 @@
 		"initialSize": 106226,
 		"inputAbbreviatedPath": "\/img\/work\/2.jpg",
 		"outputAbbreviatedPath": "\/img\/work\/2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/3-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39603,
+		"inputAbbreviatedPath": "\/img\/work\/3-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/3-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/4-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20008,
+		"inputAbbreviatedPath": "\/img\/work\/4-1.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/4-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/4-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18077,
+		"inputAbbreviatedPath": "\/img\/work\/4-2.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/4-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

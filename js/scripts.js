@@ -26,14 +26,26 @@ $( document ).ready(function() {
 		easing: 'easeInOutQuart'
 	});
 
+	/*
 	$('.work-slider').slick({
 		autoplay: true,
 		autoplaySpeed: 1500,
 		arrows: false,
 		fade: true
-	});
+	});*/
 
 	$('#bgvideo').coverVid(1920, 1080);
+
+	$(".typed").typed({
+        strings: ["innovación.", "estra^400tegia.", "viralización.", "storytelling.", "geek.", "branded content.", "posicionamiento.", "aplicaciones multiplataforma.", "marketing estratégico.", "consultoría.", "comunicación sostenible.", "impacto social."],
+        typeSpeed: 0,
+        loop: true,
+        startDelay: 0,
+        // backspacing speed
+        backSpeed: 0,
+        // time before backspacing
+        backDelay: 500,
+    });
 });
 
 $(".nav-btn").click(function() {
@@ -79,7 +91,7 @@ var dayname = date.getDay();
 var week=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"]; 
 var monthNames = [ "enero", "febrero", "marzo", "abril", "mayo", "junio",
     "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" ]; 
-document.getElementById("date").innerHTML = week[dayname]+"<br>"+day+" de <br>"+monthNames[month]+"<br>de<br>"+year;
+document.getElementById("date").innerHTML = week[dayname]+"<br>"+day+" de<br>"+monthNames[month]+"<br>de<br>"+year;
 
 var headerWaypoint = $('#mundo').waypoint(function(direction) {
 	$('.header-fixed').toggleClass("visible");
@@ -122,12 +134,14 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: -100, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-3 .number', 0.5, {
 		scale: 4
 	}))
 	// .addIndicators()
 	.addTo(controller);
+*/
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 100, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-4', 0.5, {
@@ -137,12 +151,14 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 100, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-4 .number', 0.5, {
 		scale: 4
 	}))
 	// .addIndicators()
 	.addTo(controller);
+*/
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 300, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-5', 0.5, {
@@ -152,12 +168,14 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 300, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-5 .number', 0.5, {
 		scale: 4
 	}))
 	// .addIndicators()
 	.addTo(controller);
+*/
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 500, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-6', 0.5, {
@@ -167,12 +185,14 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 500, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-6 .number', 0.5, {
 		scale: 4
 	}))
 	// .addIndicators()
 	.addTo(controller);
+*/
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-7', 0.5, {
@@ -181,7 +201,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	}))
 	// .addIndicators()
 	.addTo(controller);
-
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-7 .number', 0.5, {
 		scale: 4
@@ -195,7 +215,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	}))
 	// .addIndicators()
 	.addTo(controller);
-
+*/
 
 
 /* ---------------------------------------------- */
@@ -301,7 +321,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-1", triggerHook: "1
 /*					WAYPOINTS                     */
 /* ---------------------------------------------- */
 
-
+/*
 var waypoint1 = $('.intro-2-msg').waypoint(function(direction) {
 	$('.intro-2-msg p').blast({ delimiter: "word" }).velocity("transition.slideDownIn", {
 	    duration: 1600,
@@ -311,7 +331,7 @@ var waypoint1 = $('.intro-2-msg').waypoint(function(direction) {
 	//waypoint1.destroy();
 }, {
   offset: '90%'
-})
+})*/
 
 var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
 	$('#mundo-parallax-1 .title').blast({ delimiter: "letter" }).velocity("transition.slideDownIn", {
