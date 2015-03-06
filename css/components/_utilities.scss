@@ -15,3 +15,28 @@
   max-width: 100%;
   height: auto;
 }
+
+.centered {
+	text-align: center;
+}
+.righted {
+	text-align: right;
+}
+.lefted {
+	text-align: left;
+}
+
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.mobile {
+		display: block;
+	}
+
+	.no-mobile {
+		display: none;
+	}
+}

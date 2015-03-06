@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
 	$('.work-slider').slick({
 		autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 1500,
 		arrows: false,
 		fade: true
 	});
@@ -80,13 +80,6 @@ var week=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
 var monthNames = [ "enero", "febrero", "marzo", "abril", "mayo", "junio",
     "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" ]; 
 document.getElementById("date").innerHTML = week[dayname]+"<br>"+day+" de <br>"+monthNames[month]+"<br>de<br>"+year;
-//document.getElementById("year").innerHTML = year;
-/*
-var headerWaypoint = $('#intro-2').waypoint(function(direction) {
-	$('header').toggleClass("header-fixed");
-}, {
-  offset: 0
-})*/
 
 var headerWaypoint = $('#mundo').waypoint(function(direction) {
 	$('.header-fixed').toggleClass("visible");
@@ -96,6 +89,14 @@ var headerWaypoint = $('#mundo').waypoint(function(direction) {
 
 var controller = new ScrollMagic.Controller();
 
+
+
+
+
+/* ---------------------------------------------- */
+/*          ELEMENTOS VARIOS / PARALLAX           */
+/* ---------------------------------------------- */
+
 var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0", offset: 0, duration: vh})
 	.setTween(TweenMax.to('#intro-1', 0.5, {
     opacity: 0.2,
@@ -103,14 +104,6 @@ var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0",
 	}))
 	// .addIndicators()
 	.addTo(controller);
-
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8", offset: 0, duration: 193})
-	.setTween(TweenMax.from('#mundo-parallax-1', 0.5, {
-   		paddingTop: 20
-	}))
-	.addTo(controller);
-*/
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8", offset: 200, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-2', 0.5, {
@@ -196,11 +189,117 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
+	.setTween(TweenMax.from('#mundo-parallax-7 .number', 0.5, {
+		scale: 4
+	}))
+	// .addIndicators()
+	.addTo(controller);
+
+
+
+/* ---------------------------------------------- */
+/*					TITULOS .title                */
+/* ---------------------------------------------- */
+
+
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "1", offset: 200, duration: 400})
+	.setTween(TweenMax.from('#title-1-1', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "1", offset: 280, duration: 400})
+	.setTween(TweenMax.from('#title-1-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "1", offset: 330, duration: 400})
+	.setTween(TweenMax.from('#title-1-3', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#aboutus", triggerHook: "1", offset: 200, duration: 400})
+	.setTween(TweenMax.from('#title-2-1', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#aboutus", triggerHook: "1", offset: 280, duration: 400})
+	.setTween(TweenMax.from('#title-2-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#aboutus .points-container", triggerHook: "1", offset: 0, duration: 400})
+	.setTween(TweenMax.from('#aboutus-parallax-1', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#aboutus .points-container", triggerHook: "1", offset: 500, duration: 400})
+	.setTween(TweenMax.from('#aboutus-parallax-2', 0.5, {
+		opacity: 0,
+		right: -70
+	}))
+	.addTo(controller);
+
+
+var scene = new ScrollMagic.Scene({triggerElement: "#proyects", triggerHook: "1", offset: 200, duration: 400})
+	.setTween(TweenMax.from('#title-3-1', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#proyects", triggerHook: "1", offset: 280, duration: 400})
+	.setTween(TweenMax.from('#title-3-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+
+/* ---------------------------------------------- */
+/*                   PROYECTS                     */
+/* ---------------------------------------------- */
+
+var scene = new ScrollMagic.Scene({triggerElement: "#proyects", triggerHook: "1", offset: 0, duration: vh*2})
+	.setTween(TweenMax.from('.proyects .featured-title', 0.5, {
+    	backgroundPosition: '-500px -2000px'
+	}))
+	.addTo(controller);
+
+/* TWITTER */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-1", triggerHook: "1", offset: 200, duration: 400})
+	.setTween(TweenMax.from('#title-4-1', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-1", triggerHook: "1", offset: -200, duration: vh})
+	.setTween(TweenMax.from('#proyects-parallax-1-1', 0.5, {
+    	top: -250
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-1", triggerHook: "1", offset: 320, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-1-2', 0.5, {
+		opacity: 0,
+		right: -70
+	}))
+	.addTo(controller);
 
 
 
 
-
+/* ---------------------------------------------- */
+/*					WAYPOINTS                     */
+/* ---------------------------------------------- */
 
 
 var waypoint1 = $('.intro-2-msg').waypoint(function(direction) {
