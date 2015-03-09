@@ -1,5 +1,6 @@
 $(window).on("load resize",function(e){
 	viewportHeight = $(window).height();
+	intropt2height = $('#intro-anchor').height();
 	$('.intro-1').height(viewportHeight);
 	$('.intro-2').height(viewportHeight);
 
@@ -12,6 +13,17 @@ $(window).on("load resize",function(e){
 	} else {
 		$('.nav-side-items').height(viewportHeight - 76)
 	}*/
+
+	$('.smooth').smoothScroll({
+		speed: 1500,
+		easing: 'easeInOutQuart'
+	});
+
+	$('#intro-smooth').smoothScroll({
+		speed: 3500,
+		easing: 'easeInOutQuart',
+		offset: -viewportHeight+intropt2height+100
+	});
 });
 
 $( document ).ready(function() {
@@ -20,11 +32,6 @@ $( document ).ready(function() {
 		separator: ",",
 		speed: 300
 	});*/
-
-	$('.smooth').smoothScroll({
-		speed: 1500,
-		easing: 'easeInOutQuart'
-	});
 
 	/*
 	$('.work-slider').slick({

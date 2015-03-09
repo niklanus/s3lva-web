@@ -33,6 +33,9 @@ body
 	position: relative
 	overflow-x: hidden
 
+.body-wrapper
+	overflow: hidden
+
 header
 	width: 100%
 	padding: 10px 0 0 0 
@@ -318,12 +321,13 @@ header
 
 	p
 		font-size: 2.1em
+		font-weight: bold
 
 		strong
 			color: $blue
 
 	.part-1
-		padding: 70px 0
+		padding: 70px 0 300px 0
 		margin-bottom: 40px
 		
 		.col-1, .col-2
@@ -448,6 +452,28 @@ header
 	max-width: 767px
 	margin: 80px auto 0 auto
 
+	#mundo-parallax-2
+		margin-bottom: 110px
+
+	.pov
+		width: 100%
+		padding: 34px 20px 30px 20px
+		border: 3px solid black
+		border-left: 0px
+		display: inline-block
+		position: absolute
+		left: -66%
+
+		p
+			float: right
+			font-size: 1.8em
+			text-transform: lowercase
+			font-weight: bold
+			text-align: center
+			margin: 0 25px 0 100px
+			line-height: 1.2
+			letter-spacing: -0.02em
+
 .point
 	width: 290px
 	float: left
@@ -456,13 +482,11 @@ header
 	z-index: 2
 
 	.number
-		font-size: 4.5em
+		font-size: 4.3em
 		margin: 0
 		font-weight: bold
-		color: $blue
-		position: relative
-		top: -14px
-		left: -5px
+		margin: 0
+		line-height: 65px
 
 	.subtitle
 		font-size: 1.4em
@@ -472,6 +496,7 @@ header
 	.text
 		font-size: 1.3em
 		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
+		margin: 5px 0 0 0
 
 	&.alt
 		float: right
@@ -539,7 +564,7 @@ header
 
 .proyect
 	position: relative
-	padding-top: 50px
+	margin-top: 300px
 
 	.title
 		margin: 0 0 15px 0
@@ -555,6 +580,15 @@ header
 	.slick-slide
 		img
 			width: 100%
+	
+	.proyect-decoration
+		position: absolute
+		top: 0
+		z-index: 0
+
+	.pattern-decoration
+		display: inline-block
+		background: transparent url(../img/x-pattern.png) repeat
 
 	.subtitle-highlight
 		width: auto
@@ -574,6 +608,8 @@ header
 		padding-left: 20px
 
 	&.proyect-1
+		margin-top: 0
+
 		.title
 			left: -90px
 			margin-bottom: 50px
@@ -585,11 +621,14 @@ header
 				left: 0
 
 		.proyect-decoration
-			width: 220px
-			position: absolute
-			top: 0
 			left: 12%
-			z-index: 0
+
+			.pattern-decoration
+				width: 220px
+				height: 220px
+				border-radius: 110px
+
+
 
 		.video-container
 			video
@@ -606,11 +645,12 @@ header
 			margin-bottom: 160px
 
 		.proyect-decoration
-			width: 300px
-			position: absolute
-			top: 0
 			right: -15%
 			z-index: 0
+
+		.pattern-decoration
+			width: 300px
+			height: 100px
 
 		.video-container
 			width: 100%
@@ -638,11 +678,12 @@ header
 			margin-bottom: 80px
 
 		.proyect-decoration
-			width: 220px
-			position: absolute
-			top: 0
-			left: 12%
-			z-index: 0
+			left: -13%
+
+			.pattern-decoration
+				width: 220px
+				height: 220px
+				border-radius: 110px
 
 		.subtitle-highlight
 			margin-bottom: 40px
@@ -712,7 +753,7 @@ header
 				float: right
 				position: relative
 				right: 20px
-				top: 60px
+				//top: 60px
 				z-index: 2
 
 				video
@@ -726,6 +767,37 @@ header
 				z-index: 1
 			#proyects-parallax-4-4
 				z-index: 0
+
+		.btn-proyects
+			margin-top: 80px
+	
+	&.proyect-5
+
+		.title
+			margin-bottom: 60px
+
+		.proyect-decoration
+			width: 300px
+			position: absolute
+			top: 0
+			right: -15%
+			z-index: 0
+		
+		.parallax-container
+			position: relative
+			padding-top: 30px
+
+		#proyects-parallax-5-3
+			position: absolute
+			right: 80px
+			top: -250px
+			width: 250px
+			height: auto
+
+		#proyects-parallax-5-4
+			position: relative
+			width: 100%
+			height: auto
 
 	&.proyect-6
 		.title
@@ -795,6 +867,7 @@ header
 .contact-title
 	padding: 44px 40px 40px 40px
 	border: 2px solid black
+	border-left: 0px
 	display: inline-block
 
 	.title
@@ -803,5 +876,51 @@ header
 		margin: 0 0 0 100px
 
 .contact-container
-	width: 800px
+	width: 600px
 	margin: 0 auto
+	position: relative
+	padding-top: 250px
+
+	.subtitle-highlight
+		display: block
+		width: auto
+
+		.decoration
+			width: 70px
+
+		a
+			@include hover
+
+			&:hover
+				color: $blue
+
+#contact-parallax-1
+	float: none
+
+#contact-parallax-2
+	float: right
+	
+#contact-parallax-3
+	width: 200px
+	position: absolute
+	top: 0px
+	right: 100px
+
+
+
+footer
+	background-color: white
+	padding-top: 200px
+
+	p
+		margin: 0
+		font-size: 0.9em
+		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
+		text-align: center
+		padding: 0 30px 15px 30px
+
+	.decoration
+		width: 100%
+		height: 50px
+		display: block
+		background: url(../img/line-pattern.png) repeat
