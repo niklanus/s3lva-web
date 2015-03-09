@@ -93,7 +93,7 @@
 			</p>
 
 			<div class="intro-btn-container">
-				<a class="btn btn-main" href="#intro-anchor" id="intro-smooth">¡Ahí vamos!<i class="arrow_carrot-down_alt"></i></a>
+				<a class="btn btn-main" href="#intro-anchor" id="intro-smooth">¡Así es cómo lo hacemos!<i class="arrow_carrot-down_alt"></i></a>
 			</div>
 		</div>
 	</section>
@@ -132,7 +132,7 @@
 				
 
 				<div class="points-container cf">
-					<div class="pov">
+					<div class="pov" id="mundo-pov">
 						<p>nuestro punto<br>de vista</p>
 					</div>
 
@@ -429,7 +429,9 @@
 
 					<div class="col-sm-7">
 						<div class="parallax-container">
-							<img src="img/work/6-1.jpg" alt="" id="proyects-parallax-6-3">
+							<div class="video-container" id="video-responsive-1">
+								<div id="player"></div>
+							</div>
 							<img src="img/work/6-2.svg" alt="" id="proyects-parallax-6-4">
 						</div>
 						
@@ -439,7 +441,7 @@
 						<h2 class="title">
 							<span id="title-9-1">viral</span>
 							<span id="title-9-2">zapatilla</span>
-							<span id="title-9-2">USB</span>
+							<span id="title-9-3">USB</span>
 						</h2>
 
 						<div class="subtitle-highlight" id="proyects-parallax-6-2">
@@ -460,37 +462,41 @@
 
 				<div class="proyect proyect-7 cf">
 					<div class="proyect-decoration" id="proyects-parallax-7-1">
-						<img src="" alt="">
+						<div class="pattern-decoration"></div>
 					</div>
-
-					<div class="col-sm-5 col-md-6">
-						<h2 class="title" id="title-10-1">
-							<span class="decoration">
-								<img src="img/title-decoration.svg" alt="">
-							</span>
-							axe play
-						</h2>
-
-						<div class="subtitle-highlight" id="proyects-parallax-7-2">
-							<div class="col-md-4">
-								<span class="decoration"></span>
-								<p class="main-text">logramos conectar el fútbol y la seducción.</p>
-							</div>
-							<div class="col-md-8">
-								<p class="extra-text">
-									Creamos este branded content en stopmotion, conectando las jugadas más memorables con los trucos de seducción más osados. La campaña se lanzó durante el Mundial de la FIFA.
-								</p>
-								<p class="extra-text client"><strong>Cliente: </strong>Unilever México</p>
+					
+					<h2 class="title" id="title-10-1">
+						<span class="decoration">
+							<img src="img/title-decoration.svg" alt="">
+						</span>
+						axe play
+					</h2>
+					
+					<div class="row cf">
+						<div class="col-sm-6 col-md-7">
+							<div class="subtitle-highlight" id="proyects-parallax-7-2">
+								<div class="col-md-4">
+									<span class="decoration"></span>
+									<p class="main-text">logramos<br>conectar el<br>fútbol y la<br>seducción.</p>
+								</div>
+								<div class="col-md-8">
+									<p class="extra-text">
+										Creamos este branded content en stopmotion, conectando las jugadas más memorables con los trucos de seducción más osados.<br> La campaña se lanzó durante el Mundial de la FIFA.
+									</p>
+									<p class="extra-text client"><strong>Cliente: </strong>Unilever México</p>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-sm-7 col-md-6 video-col">
-						<div class="video-container">
-							<video autoplay loop>
-								<source src="img/work/7.mp4" type="video/mp4">
-							</video>
-							<a href="" class="btn btn-proyects">ver</a>
+					<div class="row cf">
+						<div class="col-sm-offset-6 col-sm-6 video-col">
+							<div class="video-container">
+								<video autoplay loop>
+									<source src="img/work/7.mp4" type="video/mp4">
+								</video>
+								<a href="" class="btn btn-proyects">ver</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -552,12 +558,48 @@
 		})
 		//]]>
 	</script>
+	
+	<script src="js/fitvids.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	
+	<script>
+		var tag = document.createElement('script');
 
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		var player;
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+			  height: '315',
+			  width: '420',
+			  videoId: 'SU5feJ2e9oc',
+			  events: {
+			    'onReady': onPlayerReady
+			  }
+			});
+		}
+
+		function onPlayerReady() {
+			$('#video-responsive-1').fitVids();
+
+			$(document.body).on('appear', '#video-responsive-1', function(e, $affected) {
+		        player.playVideo();
+		    });
+
+		    $(document.body).on('disappear', '#video-responsive-1', function(e, $affected) {
+		        player.pauseVideo();
+		    });
+
+		    $('#video-responsive-1').appear();
+		}
+
+	</script>
+		
+	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
-	<!-- <script src="js/morphext.min.js"></script> 
-	<script src="js/slick.min.js"></script> -->
-	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/ScrollMagic.min.js"></script>
 	<script src="js/animation.gsap.min.js"></script>

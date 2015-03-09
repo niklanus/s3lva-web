@@ -204,7 +204,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
 	.setTween(TweenMax.from('#mundo-parallax-7', 0.5, {
 		opacity: 0,
-    	left: -100
+    	left: 100
 	}))
 	// .addIndicators()
 	.addTo(controller);
@@ -223,6 +223,12 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerH
 	// .addIndicators()
 	.addTo(controller);
 */
+
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "1", offset: 0, duration: vh*3})
+	.setTween(TweenMax.from('#mundo-pov', 0.5, {
+		top: 2000
+	}))
+	.addTo(controller);
 
 
 /* ---------------------------------------------- */
@@ -299,6 +305,10 @@ var scene = new ScrollMagic.Scene({triggerElement: "#proyects", triggerHook: "1"
 	}))
 	.addTo(controller);
 
+
+
+
+
 /* TWITTER */
 
 var scene = new ScrollMagic.Scene({triggerElement: ".proyect-1", triggerHook: "1", offset: 200, duration: 400})
@@ -320,6 +330,214 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-1", triggerHook: "1
 		right: -70
 	}))
 	.addTo(controller);
+
+
+
+
+
+
+/* APPTISTA */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-2", triggerHook: "1", offset: 200, duration: 400})
+	.setTween(TweenMax.from('#title-5-1', 0.5, {
+		opacity: 0,
+		right: -150
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-2", triggerHook: "1", offset: 0, duration: vh*1.5})
+	.setTween(TweenMax.from('#proyects-parallax-2-1', 0.5, {
+    	top: 400
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-2", triggerHook: "1", offset: 320, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-2-2', 0.5, {
+		opacity: 0,
+		right: -70
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-2", triggerHook: "1", offset: -200, duration: vh+300})
+	.setTween(TweenMax.from('#proyects-parallax-2-4', 0.5, {
+    	bottom: -350
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-2", triggerHook: "1", offset: 300, duration: vh})
+	.setTween(TweenMax.from('#proyects-parallax-2-5', 0.5, {
+    	top: -250
+	}))
+	.addTo(controller);
+
+
+
+
+
+
+/* TROVA */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-3", triggerHook: "1", offset: 200, duration: 400})
+	.setTween(TweenMax.from('#title-6-1', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-3", triggerHook: "1", offset: 0, duration: vh*1.5})
+	.setTween(TweenMax.from('#proyects-parallax-3-1', 0.5, {
+    	top: 400
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-3", triggerHook: "1", offset: 320, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-3-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+
+
+
+
+
+
+
+
+/* RED LIGHT CINEMA */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", offset: 160, duration: 400})
+	.setTween(TweenMax.from('#title-7-1', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", offset: 240, duration: 400})
+	.setTween(TweenMax.from('#title-7-2', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", offset: 0, duration: vh*1.5})
+	.setTween(TweenMax.from('#proyects-parallax-4-1', 0.5, {
+    	top: 400
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", offset: 300, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-4-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+var tween10 = new TimelineMax ()
+	.add([
+		TweenMax.fromTo("#proyects-parallax-4-4", 1, {top: 500}, {top: -400, ease: Linear.easeNone}),
+		TweenMax.fromTo("#proyects-parallax-4-3", 1, {top: 350}, {top: 25, ease: Linear.easeNone})
+	]);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", duration: $(window).width()})
+				.setTween(tween10)
+				.addTo(controller);
+
+
+
+
+
+/* SUPER APP */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-5", triggerHook: "1", offset: 160, duration: 400})
+	.setTween(TweenMax.from('#title-8-1', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-5", triggerHook: "1", offset: 240, duration: 400})
+	.setTween(TweenMax.from('#title-8-2', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-5", triggerHook: "1", offset: 0, duration: vh*1.5})
+	.setTween(TweenMax.from('#proyects-parallax-5-1', 0.5, {
+    	top: 200
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-5", triggerHook: "1", offset: 300, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-5-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-5", triggerHook: "1", offset: 0, duration: vh*0.75})
+	.setTween(TweenMax.from('#proyects-parallax-5-3', 0.5, {
+    	top: -100
+	}))
+	.addTo(controller);
+
+
+
+
+
+
+
+/* SUPER APP */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 160, duration: 400})
+	.setTween(TweenMax.from('#title-9-1', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 240, duration: 400})
+	.setTween(TweenMax.from('#title-9-2', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 300, duration: 400})
+	.setTween(TweenMax.from('#title-9-3', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 0, duration: vh*1.5})
+	.setTween(TweenMax.from('#proyects-parallax-6-1', 0.5, {
+    	top: 200
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 380, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-6-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 0, duration: vh*2})
+	.setTween(TweenMax.from('#proyects-parallax-6-4', 0.5, {
+    	top: 1000
+	}))
+	.addTo(controller);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -350,3 +568,28 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
 }, {
   offset: '95%'
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
