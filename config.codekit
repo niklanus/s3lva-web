@@ -395,6 +395,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/work\/5-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58773,
+		"inputAbbreviatedPath": "\/img\/work\/5-1.png",
+		"outputAbbreviatedPath": "\/img\/work\/5-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/5-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90864,
+		"inputAbbreviatedPath": "\/img\/work\/5-2.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/5-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/work\/6-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -413,6 +435,17 @@
 		"initialSize": 990,
 		"inputAbbreviatedPath": "\/img\/x-pattern.png",
 		"outputAbbreviatedPath": "\/img\/x-pattern.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/x-pattern@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1022,
+		"inputAbbreviatedPath": "\/img\/x-pattern@2x.png",
+		"outputAbbreviatedPath": "\/img\/x-pattern@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

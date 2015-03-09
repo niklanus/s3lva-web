@@ -20,7 +20,7 @@ $(window).on("load resize",function(e){
 	});
 
 	$('#intro-smooth').smoothScroll({
-		speed: 3500,
+		speed: 1500,
 		easing: 'easeInOutQuart',
 		offset: -viewportHeight+intropt2height+100
 	});
