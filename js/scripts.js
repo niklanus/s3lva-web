@@ -24,6 +24,12 @@ $(window).on("load resize",function(e){
 		easing: 'easeInOutQuart',
 		offset: -viewportHeight+intropt2height+100
 	});
+
+	$('.nav-main a').smoothScroll({
+		speed: 1500,
+		easing: 'easeInOutQuart',
+		offset: -100
+	});
 });
 
 $( document ).ready(function() {
@@ -53,6 +59,16 @@ $( document ).ready(function() {
         // time before backspacing
         backDelay: 500,
     });
+
+    $(".fancybox").fancybox({
+    	type: 'iframe',
+    	padding: 0,
+    	autoHeight: true
+    });
+
+    $('#fullpage').fullpage({
+    	
+    });
 });
 
 $(".nav-btn").click(function() {
@@ -77,13 +93,32 @@ $(".nav-btn").click(function() {
 });
 
 $(".nav-main a").click(function() {
-	$('body').removeClass('nav-visible');
+	/*$('body').removeClass('nav-visible');
 	$(".nav-main li")
 	  .velocity("transition.fadeOut", {
 	    duration: 150,
 	    stagger: 0,
 	    delay: 0
-	});
+	});*/
+
+	if ( $('body').hasClass('nav-visible') ) {
+		$('body').removeClass('nav-visible').css('overflow-y', 'auto');
+		$(".nav-main li")
+		  .velocity("transition.fadeOut", {
+		    duration: 150,
+		    stagger: 0,
+		    delay: 0
+		});
+	} else {
+		$('body').addClass('nav-visible').css('overflow-y', 'hidden');
+		$(".nav-main li").css('opacity', '0');
+	 	$(".nav-main li")
+		  .velocity("transition.slideUpIn", {
+		    duration: 600,
+		    stagger: 100,
+		    delay: 300
+		});
+	}
 });
 
 vh = $(window).height();
@@ -536,6 +571,41 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1
 
 
 
+/* AXE PLAY */
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-7", triggerHook: "1", offset: 160, duration: 400})
+	.setTween(TweenMax.from('#title-10-1', 0.5, {
+		opacity: 0,
+		left: -150
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-7", triggerHook: "1", offset: 0, duration: vh*1.5})
+	.setTween(TweenMax.from('#proyects-parallax-7-1', 0.5, {
+    	top: 200
+	}))
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-7", triggerHook: "1", offset: 260, duration: 400})
+	.setTween(TweenMax.from('#proyects-parallax-7-2', 0.5, {
+		opacity: 0,
+		left: -70
+	}))
+	.addTo(controller);
+
+
+
+
+
+
+
+/* CONTACTO */
+
+var scene = new ScrollMagic.Scene({triggerElement: "#contact", triggerHook: "1", offset: 0, duration: vh*2})
+	.setTween(TweenMax.from('#contact-parallax-3', 0.5, {
+    	top: 1000
+	}))
+	.addTo(controller);
 
 
 
