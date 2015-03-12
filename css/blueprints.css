@@ -1617,9 +1617,10 @@ header {
 
 .intro-2-msg {
   display: table;
-  position: relative;
-  z-index: 1;
-  width: 100%; }
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  top: 0; }
   .intro-2-msg p {
     font-size: 2.2em;
     font-weight: bold; }
@@ -1634,7 +1635,9 @@ header {
     .intro-2-msg .part-1 .col-1, .intro-2-msg .part-1 .col-2 {
       display: inline-block;
       float: left;
-      width: 50%; }
+      width: 50%;
+      position: relative;
+      left: -40px; }
     .intro-2-msg .part-1 .col-1 p {
       text-align: right; }
     .intro-2-msg .part-1 .col-2 p {
@@ -1646,19 +1649,29 @@ header {
       .intro-2-msg .part-1 p strong {
         color: #3fa9f5; }
 
-.part-2, .part-3 {
+.part-2 {
+  position: relative;
+  z-index: 2; }
+
+.p2-text-1 {
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center; }
+
+.part-2-1, .part-2-2 {
   padding: 100px 0;
-  background-color: white; }
-  .part-2 p, .part-3 p {
+  background-color: white;
+  position: relative; }
+  .part-2-1 p, .part-2-2 p {
     font-size: 2.6em;
     font-weight: 400;
     font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif; }
-    .part-2 p strong, .part-3 p strong {
+    .part-2-1 p strong, .part-2-2 p strong {
       color: #3fa9f5; }
 
-.part-2 {
-  position: relative; }
-  .part-2:before {
+.part-2-1 {
+  z-index: 2; }
+  .part-2-1:before {
     content: "";
     width: 0;
     height: 0;
@@ -1670,18 +1683,13 @@ header {
     margin-left: -35px;
     bottom: -30px; }
 
-.p2-text-1 {
-  max-width: 580px;
-  margin: 0 auto;
-  text-align: center; }
-
-.part-3 {
+.part-2-2 {
   width: 100%;
-  background-color: rgba(42, 42, 42, 0.8);
+  background-color: #3fa9f5;
   color: white;
   position: absolute;
   top: 0;
-  z-index: -1; }
+  z-index: 0; }
 
 .typed-cursor {
   opacity: 1;
@@ -1702,6 +1710,11 @@ header {
     opacity: 0; }
   100% {
     opacity: 1; } }
+.clear-0 {
+  width: 100%;
+  height: 200px;
+  clear: both; }
+
 .clear-1 {
   width: 100%;
   height: 200px;
@@ -1724,8 +1737,11 @@ header {
   .mundo .container, .aboutus .container {
     position: relative; }
   .mundo .title-alt, .aboutus .title-alt {
-    font-size: 2.8em;
+    width: 130px;
+    font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.4em;
     color: #b3ddfb;
+    font-weight: normal;
     line-height: 1;
     letter-spacing: -0.025em;
     position: absolute;
@@ -1734,15 +1750,16 @@ header {
     text-align: right;
     margin: 0;
     clear: both; }
-    .mundo .title-alt strong, .aboutus .title-alt strong {
-      font-weight: normal; }
-    .mundo .title-alt span, .aboutus .title-alt span {
-      display: block; }
+    .mundo .title-alt #theDate, .aboutus .title-alt #theDate {
+      font-weight: 400 !important; }
+  .mundo .subtitle-highlight, .aboutus .subtitle-highlight {
+    width: 285px !important; }
 
 #clock {
-  width: 125px;
+  width: 50px;
   height: auto;
-  float: right; }
+  float: left;
+  display: inline-block; }
 
 #face {
   stroke-width: 1px;
@@ -1815,7 +1832,8 @@ header {
   .point .subtitle {
     font-size: 1.4em;
     margin: 0;
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: underline; }
   .point .text {
     font-size: 1.3em;
     font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif;
@@ -1832,7 +1850,8 @@ header {
     left: 125px; }
 
   #mundo-parallax-6 {
-    right: 40px; }
+    right: -40px;
+    top: -70px; }
 
   #mundo-parallax-7 {
     left: 230px; } }
@@ -1840,6 +1859,8 @@ header {
   margin-top: 0; }
   .aboutus .subtitle-highlight {
     width: 250px; }
+    .aboutus .subtitle-highlight .decoration {
+      background-color: #242424; }
   .aboutus .clients {
     width: 100%;
     height: auto; }

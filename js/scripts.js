@@ -2,7 +2,7 @@ $(window).on("load resize",function(e){
 	viewportHeight = $(window).height();
 	intropt2height = $('#intro-anchor').height();
 	$('.intro-1').height(viewportHeight);
-
+	$('.clear-0').height(viewportHeight);
 	$('#intro-2-msg').height(viewportHeight);
 
 
@@ -26,7 +26,7 @@ $(window).on("load resize",function(e){
 	$('#intro-smooth').smoothScroll({
 		speed: 1500,
 		easing: 'easeInOutQuart',
-		offset: 0
+		offset: viewportHeight
 	});
 
 	$('.nav-main a').smoothScroll({
@@ -133,14 +133,14 @@ var dayname = date.getDay();
 var week=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"]; 
 var monthNames = [ "enero", "febrero", "marzo", "abril", "mayo", "junio",
     "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" ]; 
-document.getElementById("date").innerHTML = week[dayname]+"<br>"+day+" de<br>"+monthNames[month]+"<br>de<br>"+year;
+document.getElementById("theDate").innerHTML = week[dayname]+"<br>"+day+" de<br>"+monthNames[month]+"<br>de "+year;
 
 setInterval(function() {
 	function r(el, deg) {
 	el.setAttribute('transform', 'rotate('+ deg +' 50 50)')
 	}
 	var d = new Date()
-	r(sec, 6*d.getSeconds())
+	//r(sec, 6*d.getSeconds())
 	r(min, 6*d.getMinutes())
 	r(hour, 30*(d.getHours()%12) + d.getMinutes()/2)
 }, 1000)
@@ -169,11 +169,18 @@ var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0",
 	// .addIndicators()
 	.addTo(controller);
 
+/*
+var scene = new ScrollMagic.Scene({triggerElement: "#intro-2-2-msg", triggerHook: "1", offset: 150, duration: 5000})
+	.setPin("#pin1")
+	.addIndicators()
+	.addTo(controller);
+*/
+
 var scene = new ScrollMagic.Scene({triggerElement: "#intro-2-2-msg", triggerHook: "1", offset: 150, duration: vh})
 	.setTween(TweenMax.to('#intro-2-3-msg', 0.5, {
     	top: 300
 	}))
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8", offset: 200, duration: 400})
