@@ -864,7 +864,7 @@ header
 			min-height: 630px
 
 			.video-container
-				width: 400px
+				width: 100%
 				float: right
 				position: relative
 				right: 20px
@@ -881,7 +881,9 @@ header
 			#proyects-parallax-4-3
 				z-index: 1
 			#proyects-parallax-4-4
-				z-index: 0
+				width: 130px
+				left: 20px
+				z-index: 3
 
 		.btn-proyects
 			margin-top: 80px
@@ -1044,9 +1046,40 @@ header
 	bottom: 0px
 
 
+.proyects-more
+	.btn-more
+		width: 150px
+		height: 150px
+		border: 0
+		background-color: $blue
+		color: white
+		line-height: 1 !important
+		outline: 0
+		// @include hover
 
+		span
+			font-size: 1.8em
+			line-height: 1.05
+			font-weight: bold
+			text-decoration: underline
+			text-transform: lowercase !important
 
+		img
+			width: 60px
+			height: auto
+			margin: 0 auto
+			display: block
+			margin-top: 20px
 
+		&:hover
+			background-color: darken($blue,20)
+		&:focus
+			background-color: darken($blue,20)
+
+.proyects-more-hidden
+	visibility: hidden !important
+	height: 0px !important
+	overflow: hidden !important
 
 
 

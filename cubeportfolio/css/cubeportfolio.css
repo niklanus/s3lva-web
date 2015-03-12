@@ -142,22 +142,23 @@
 .cbp-l-caption-title {
     /* @editable properties */
     color: #fff;
-    font: 700 16px/18px "Open Sans", 'Helvetica Neue', Helvetica, sans-serif;
+    font: 700 18px "Montserrat", 'Helvetica Neue', Helvetica, sans-serif;
     margin-bottom: 5px;
+    letter-spacing: -0.01em;
 }
 
 .cbp-l-caption-desc {
     /* @editable properties */
     color: #777;
-    font: 400 12px/16px "Open Sans", 'Helvetica Neue', Helvetica, sans-serif;
+    font: 400 13px/16px "Montserrat", 'Helvetica Neue', Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
 .cbp-l-caption-text {
     /* @editable properties */
-    font: 400 14px "Open Sans", sans-serif;
+    font: 400 15px "Vollkorn", sans-serif;
     color: #fff;
-    letter-spacing: 3px;
+    margin-top: 10px;
 }
 
 .cbp-l-caption-buttonLeft,
@@ -3639,13 +3640,15 @@
     --------------------------------------------------------------- */
 .cbp-l-grid-fullScreen {
     visibility: hidden;
+    transition: height 1000ms ease-in-out;
+    -webkit-transition: height 1000ms ease-in-out;
 }
 
 /* set width and height for items */
 .cbp-l-grid-fullScreen .cbp-item {
     /* @editable properties */
-    width: 300px;
-    height: 170px;
+    width: 400px;
+    height: 220px;
 }
 /*  END - layout grid full screen */
 

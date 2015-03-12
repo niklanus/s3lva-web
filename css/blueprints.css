@@ -2062,7 +2062,7 @@ header {
     position: relative;
     min-height: 630px; }
     .proyect.proyect-4 .parallax-container .video-container {
-      width: 400px;
+      width: 100%;
       float: right;
       position: relative;
       right: 20px;
@@ -2075,7 +2075,9 @@ header {
     .proyect.proyect-4 .parallax-container #proyects-parallax-4-3 {
       z-index: 1; }
     .proyect.proyect-4 .parallax-container #proyects-parallax-4-4 {
-      z-index: 0; }
+      width: 130px;
+      left: 20px;
+      z-index: 3; }
   .proyect.proyect-4 .btn-proyects {
     margin-top: 80px; }
   .proyect.proyect-5 .title {
@@ -2194,6 +2196,36 @@ header {
   position: absolute;
   right: 0;
   bottom: 0px; }
+
+.proyects-more .btn-more {
+  width: 150px;
+  height: 150px;
+  border: 0;
+  background-color: #3fa9f5;
+  color: white;
+  line-height: 1 !important;
+  outline: 0; }
+  .proyects-more .btn-more span {
+    font-size: 1.8em;
+    line-height: 1.05;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: lowercase !important; }
+  .proyects-more .btn-more img {
+    width: 60px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px; }
+  .proyects-more .btn-more:hover {
+    background-color: #0a76c4; }
+  .proyects-more .btn-more:focus {
+    background-color: #0a76c4; }
+
+.proyects-more-hidden {
+  visibility: hidden !important;
+  height: 0px !important;
+  overflow: hidden !important; }
 
 .contact {
   padding-top: 100px;

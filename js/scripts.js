@@ -489,11 +489,11 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1
 
 var tween10 = new TimelineMax ()
 	.add([
-		TweenMax.fromTo("#proyects-parallax-4-4", 1, {top: 500}, {top: -400, ease: Linear.easeNone}),
-		TweenMax.fromTo("#proyects-parallax-4-3", 1, {top: 350}, {top: 25, ease: Linear.easeNone})
+		TweenMax.fromTo("#proyects-parallax-4-4", 1, {top: 400}, {top: 240, ease: Linear.easeNone})
+		//,TweenMax.fromTo("#proyects-parallax-4-3", 1, {top: 350}, {top: 25, ease: Linear.easeNone})
 	]);
 
-var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", duration: $(window).width()})
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", duration: vh*1.5})
 				.setTween(tween10)
 				.addTo(controller);
 
@@ -727,17 +727,11 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
     gridContainer.cubeportfolio({
 
         animationType: 'fadeOutTop',
-
         gapHorizontal: 10,
-
         gapVertical: 10,
-
         gridAdjustment: 'responsive',
-
         caption: 'zoom',
-
         displayType: 'lazyLoading',
-
         displayTypeSpeed: 100,
 
         // lightbox
@@ -763,11 +757,33 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
             // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
         }
     });
+
+	$('#grid-container').addClass('proyects-more-hidden');
+	
 })(jQuery, window, document);
 
+$("#proyects-more-show").click(function() {
+	$(this).animate({
+	    opacity: 0,
+	    height: "0"
+	  }, 400, function() {
+	    $('#grid-container').removeClass('proyects-more-hidden');
+	});
+});
 
 
 
 
 
 
+
+
+
+
+
+
+/* ETC */
+
+$( document ).ready(function() {
+	$(window).trigger('resize');
+});
