@@ -9,7 +9,6 @@
 @import 'components/slick'
 @import 'components/preloader'
 @import 'components/fancybox'
-@import 'components/fullpage'
 
 * 
 	box-sizing: border-box
@@ -33,7 +32,7 @@ body
 	font-size: 100%
 	line-height: 1.3
 	position: relative
-	overflow-x: hidden
+	overflow-x: hidden !important
 
 .body-wrapper
 	overflow: hidden
@@ -170,7 +169,7 @@ header
 	line-height: 44px
 
 	&.btn-main
-		color: $blue
+		color: #f3656a
 		background-color: white
 		padding: 0px 20px
 		font-weight: 500
@@ -209,7 +208,7 @@ header
 
 .intro-1
 	display: block
-	background: $blue
+	background: #f3656a
 	background-size: cover
 	position: relative
 	z-index: 4
@@ -237,11 +236,12 @@ header
 
 
 	p
-		max-width: 600px
-		font-size: 1.3em
+		max-width: 767px
+		font-size: 2em
 		color: white
 		margin: 0 auto 10px auto
 		padding: 0 40px
+		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
 
 		img
 			display: block
@@ -256,8 +256,7 @@ header
 	bottom: 5%
 
 	.btn
-		color: $blue
-		
+		//color: $blue
 
 		&:hover
 			transform: scale(1.1)
@@ -319,19 +318,25 @@ header
 			display: none
 		
 .intro-2-msg
+	display: table
 	position: relative
 	z-index: 1
+	width: 100%
 
 	p
-		font-size: 2.1em
+		font-size: 2.2em
 		font-weight: bold
 
 		strong
 			color: $blue
 
 	.part-1
-		padding: 70px 0 300px 0
+		width: 100%
+		height: 100%
+		//padding: 70px 0 300px 0
 		margin-bottom: 40px
+		display: table-cell
+		vertical-align: middle
 		
 		.col-1, .col-2
 			display: inline-block
@@ -353,9 +358,46 @@ header
 			strong
 				color: $blue
 
-	.part-2
-		padding: 50px 0
-		background-color: rgba(255,255,255,0.95)
+.part-2, .part-3
+	padding: 100px 0
+	background-color: white
+
+	p
+		font-size: 2.6em
+		font-weight: 400
+		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
+
+		strong
+			color: $blue
+
+.part-2
+	position: relative
+
+	&:before
+		content: ''
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 30px 35px 0 35px
+		border-color: #ffffff transparent transparent transparent
+		position: absolute
+		left: 50%
+		margin-left: -35px
+		bottom: -30px
+
+.p2-text-1
+	max-width: 580px
+	margin: 0 auto
+	text-align: center
+
+.part-3
+	width: 100%
+	background-color: rgba(42, 42, 42, 0.8)
+	color: white
+	position: absolute
+	top: 0
+	z-index: -1
+
 
 .typed-cursor
 	opacity: 1
@@ -391,7 +433,7 @@ header
 
 .clear-1
 	width: 100%
-	height: 900px
+	height: 200px
 	clear: both
 
 .mundo
@@ -415,9 +457,8 @@ header
 		position: relative
 
 	.title-alt
-		font-size: 5em
+		font-size: 2.8em
 		color: lighten($blue,24)
-		font-weight: bold
 		line-height: 1
 		letter-spacing: -0.025em
 		position: absolute
@@ -425,7 +466,29 @@ header
 		top: 0
 		text-align: right
 		margin: 0
+		clear: both
 
+		strong
+			font-weight: normal
+
+		span
+			display: block
+
+#clock
+	width: 125px
+	height: auto
+	float: right
+
+#face
+	stroke-width: 1px
+	stroke: lighten($blue,24)
+	fill: none
+
+#hour, #min, #sec
+	stroke-width: 1px
+	fill: lighten($blue,24)
+#sec
+	stroke: #f55
 
 .subtitle-highlight
 	width: 200px
@@ -560,6 +623,7 @@ header
 
 			.title
 				margin-bottom: 14px
+				position: relative
 
 			.decoration
 				display: block
@@ -579,7 +643,7 @@ header
 
 .proyect
 	position: relative
-	margin-top: 300px
+	margin-top: 380px
 
 	.title
 		margin: 0 0 15px 0
@@ -681,7 +745,7 @@ header
 			video
 				width: 100%
 
-		.btn-proyects
+		/*.btn-proyects
 			position: relative
 			right: -205px
 			top: -200px
@@ -691,7 +755,7 @@ header
 
 			@media only screen and (max-width: 991px)
 				right: auto
-				top: auto
+				top: auto*/
 
 	&.proyect-3
 		padding-top: 0px
@@ -763,6 +827,15 @@ header
 		.title
 			margin-bottom: 40px
 			text-align: right
+			position: relative
+
+			img
+				width: 100%
+				position: absolute
+				z-index: -1
+				top: -12px
+				left: 0
+				padding-left: 50px
 
 		.proyect-decoration
 			right: -75px
@@ -899,7 +972,7 @@ header
 
 		.proyect-decoration
 			left: -23%
-			top: -100
+			top: -100px
 
 			.pattern-decoration
 				width: 250px
@@ -924,6 +997,36 @@ header
 			.extra-text
 				padding-left: 20px
 
+	&.proyect-8
+		text-align: right
+
+		.title
+			margin-bottom: 20px
+
+		.proyect-decoration
+			right: -14%
+			width: 350px
+			height: 200px
+			top: -100px
+			
+			img
+				width: 100%
+
+		.subtitle-highlight
+			
+			.decoration, .main-text, .extra-text, .btn-container
+				float: right
+				clear: both
+				display: block
+
+		.parallax-container
+			img
+				display: block
+				width: 75%
+				height: auto
+				margin: 0 auto
+
+
 #proyects-parallax-2-3, #proyects-parallax-2-4, #proyects-parallax-2-5
 	display: inline-block
 	position: relative
@@ -936,8 +1039,37 @@ header
 	right: 20px
 
 #proyects-parallax-2-5
-	left: 22%
-	top: -30px
+	position: absolute
+	right: 0
+	bottom: 0px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .contact
@@ -951,8 +1083,6 @@ header
 	display: inline-block
 
 	.title
-		font-size: 3em
-		text-transform: uppercase
 		margin: 0 0 0 100px
 
 .contact-container
@@ -981,10 +1111,10 @@ header
 	float: right
 	
 #contact-parallax-3
-	width: 200px
+	width: 120px
 	position: absolute
 	top: 0px
-	right: 100px
+	right: 200px
 
 
 

@@ -26,7 +26,7 @@
 </head>
 <body>
 
-	<!-- Preloader -->
+	<!-- Preloader 
 	<div id="preloader">
 	    <div id="preloader-status">
 	    	<div class="logo">
@@ -34,7 +34,7 @@
 	    	</div>
 	    	<span></span>
 	    </div>
-	</div>
+	</div>-->
 
 	<div class="body-wrapper">
 
@@ -71,14 +71,15 @@
 		<ul>
 			<li><a href="#mundo">Cómo ser una marca viva</a></li>
 			<li><a href="#aboutus">Sobre Nosotros</a></li>
-			<li><a href="#proyects">Los Proyectos</a></li>
+			<li><a href="#proyects">Trabajos</a></li>
 			<li class="nav-proyect"><a href="#proyect-1">Twitter</a></li>
 			<li class="nav-proyect"><a href="#proyect-2">Apptista</a></li>
 			<li class="nav-proyect"><a href="#proyect-3">Trova</a></li>
 			<li class="nav-proyect"><a href="#proyect-4">Red Light Cinema</a></li>
 			<li class="nav-proyect"><a href="#proyect-5">Super App</a></li>
 			<li class="nav-proyect"><a href="#proyect-6">Viral: Zapatilla USB</a></li>
-			<li class="nav-proyect last"><a href="#proyect-7">Axe Play</a></li>
+			<li class="nav-proyect"><a href="#proyect-7">Axe Play</a></li>
+			<li class="nav-proyect last"><a href="#proyect-8">El Oso</a></li>
 			<li><a href="#contact">Contacto</a></li>
 		</ul>
 	</nav>
@@ -89,12 +90,12 @@
 
 			<p>
 				<img src="img/decoration-1.svg" alt="" class="decoration">
-				Conectamos marcas vivas con seres humanos.
+				Conectamos marcas vivas con personas.
 				<img src="img/decoration-1.svg" alt="" class="decoration">
 			</p>
 
 			<div class="intro-btn-container">
-				<a class="btn btn-main" href="#intro-anchor" id="intro-smooth">¡Así es cómo lo hacemos!<i class="arrow_carrot-down_alt"></i></a>
+				<a class="btn btn-main" href="#intro-2-msg" id="intro-smooth">¡Así es cómo lo hacemos!<i class="arrow_carrot-down_alt"></i></a>
 			</div>
 		</div>
 	</section>
@@ -105,17 +106,27 @@
 				<source src="img/intro1080.mp4" type="video/mp4">
 			</video>
 		</div>
+
 		<div class="intro-2-msg" id="intro-2-msg">
 			<div class="part-1">
 				<div class="col-1"><p><strong>Selva</strong> es&nbsp;</p></div>
 				<div class="col-2"><p><span class="typed"></span></p></div>
 			</div>
-			<div class="part-2" id="intro-anchor">
+		</div>
+
+		<div class="part-2" id="intro-2-2-msg">
+			<div class="container">
+				<p class="p2-text-1">Creamos experiencias que aportan valor a las marcas.</p>
+			</div>
+
+			<div class="part-3" id="intro-2-3-msg">
 				<div class="container">
-					<p>Creamos experiencias que aportan valor a las marcas.</p>
+					<p class="p2-text-1">Y las experiencias no se olvidan.</p>
 				</div>
 			</div>
 		</div>
+		
+		
 	</section>
 
 	<div class="clear-1"></div>
@@ -128,7 +139,19 @@
 					<span id="title-1-2">ser una</span>
 					<span id="title-1-3">marca viva</span>
 				</h2>
-				<p class="title-alt"><strong id="date"></strong></p>
+				<p class="title-alt">
+					<span>
+						<svg id="clock" viewBox="0 0 100 100">
+							<circle id="face" cx="50" cy="50" r="45"/>
+							<g id="hands">
+							<rect id="hour" x="48.5" y="12.5" width="5" height="40"/>
+							<rect id="min" x="48" y="12.5" width="3" height="40"/>
+							<line id="sec" x1="50" y1="50" x2="50" y2="16" />
+							</g>
+						</svg>
+					</span>
+					<strong id="date"></strong>
+				</p>
 
 				
 
@@ -218,11 +241,7 @@
 		<div class="featured-title cf">
 			<div class="container">
 				<div class="title-container">
-					<h2 class="title">
-						<span id="title-3-1">LOS</span>
-						<span id="title-3-2">PROYECTOS</span>
-					</h2>
-					<span class="decoration"></span>
+					<h2 class="title" id="title-3-1">trabajos</h2>
 				</div>
 			</div>
 			<img src="img/diagonal-1.svg" alt="" class="diagonal">
@@ -231,7 +250,7 @@
 		<div class="proyects-container cf">
 			<div class="container">
 
-				<div class="proyect section proyect-1 cf" id="proyect-1">
+				<div class="proyect proyect-1 cf" id="proyect-1">
 					<div class="proyect-decoration" id="proyects-parallax-1-1">
 						<div class="pattern-decoration"></div>
 					</div>
@@ -270,7 +289,7 @@
 				</div>
 
 				
-				<div class="proyect section proyect-2 cf" id="proyect-2">
+				<div class="proyect proyect-2 cf" id="proyect-2">
 					<div class="proyect-decoration" id="proyects-parallax-2-1">
 						<div class="pattern-decoration"></div>
 					</div> 
@@ -280,7 +299,7 @@
 
 						<div class="parallax-container">
 							<div>
-								<img src="img/work/2-1.jpg" alt="" id="proyects-parallax-2-3">
+								<!--<img src="img/work/2-1.jpg" alt="" id="proyects-parallax-2-3">-->
 								<img src="img/work/2-2.png" alt="" id="proyects-parallax-2-4">
 							</div>
 						
@@ -289,11 +308,8 @@
 									<source src="img/work/2.mp4" type="video/mp4">
 								</video>
 							</div>
-
-							<img src="img/work/2-3.png" alt="" id="proyects-parallax-2-5">
-
 						</div>
-						<div class="centered">
+						<div class="righted">
 							<a href="" class="btn btn-proyects fancybox">ver</a>
 						</div>
 					</div>
@@ -308,12 +324,13 @@
 								Xperia necesitaba comunicar la integración las poderosas Google Apps en su sistema Android. La campaña salió por MTV Latinoamérica y además se invitó a la teleplatea a participar, enviando sus propias ideas de un app.
 							</p>
 							<p class="extra-text client"><strong>Cliente: </strong>Sony América Latina</p>
+							<img src="img/work/2-3.png" alt="" id="proyects-parallax-2-5">
 						</div>
 					</div>
 				</div>
 
 
-				<div class="proyect section proyect-3 cf" id="proyect-3">
+				<div class="proyect proyect-3 cf" id="proyect-3">
 					<div class="proyect-decoration" id="proyects-parallax-3-1">
 						<div class="pattern-decoration"></div>
 					</div>
@@ -350,10 +367,10 @@
 				</div>
 				
 
-				<div class="proyect section proyect-4 cf" id="proyect-4">
-					<div class="proyect-decoration" id="proyects-parallax-4-1">
+				<div class="proyect proyect-4 cf" id="proyect-4">
+					<!--<div class="proyect-decoration" id="proyects-parallax-4-1">
 						<div class="pattern-decoration"></div>
-					</div>
+					</div>-->
 
 					<div class="col-sm-7">
 						<div class="parallax-container">
@@ -376,6 +393,7 @@
 						<h2 class="title">
 							<span id="title-7-1">red light</span>
 							<span id="title-7-2">cinema</span>
+							<img src="img/decoration-5.svg" alt="" id="proyects-parallax-4-1">
 						</h2>
 
 						<div class="subtitle-highlight" id="proyects-parallax-4-2">
@@ -390,7 +408,7 @@
 				</div>
 
 
-				<div class="proyect section proyect-5 cf" id="proyect-5">
+				<div class="proyect proyect-5 cf" id="proyect-5">
 					<div class="proyect-decoration" id="proyects-parallax-5-1">
 						<div class="pattern-decoration"></div>
 					</div>
@@ -423,7 +441,7 @@
 				</div>
 				
 
-				<div class="proyect section proyect-6 cf" id="proyect-6">
+				<div class="proyect proyect-6 cf" id="proyect-6">
 					<div class="proyect-decoration" id="proyects-parallax-6-1">
 						<div class="pattern-decoration"></div>
 					</div>
@@ -461,7 +479,7 @@
 				</div>
 
 
-				<div class="proyect section proyect-7 cf" id="proyect-7">
+				<div class="proyect proyect-7 cf" id="proyect-7">
 					<div class="proyect-decoration" id="proyects-parallax-7-1">
 						<div class="pattern-decoration"></div>
 					</div>
@@ -503,14 +521,59 @@
 				</div>
 
 
+				<div class="proyect proyect-8 cf" id="proyect-8">
+					<div class="proyect-decoration" id="proyects-parallax-8-1">
+						<img src="img/decoration-4.svg" alt="">
+					</div>
+					
+					<div class="row cf">
+						<div class="col-sm-7">
+
+							<div class="parallax-container">
+								<img src="img/work/8.svg" alt="" id="proyects-parallax-8-3">
+							</div>
+						</div>
+
+						<div class="col-sm-5">
+							<h2 class="title" id="title-11-1">el oso</h2>
+							<div class="subtitle-highlight" id="proyects-parallax-8-2">
+								<span class="decoration"></span>
+								<p class="main-text">un vino nuevo<br>con historia.</p>
+								<p class="extra-text">
+									Trabajamos en el posicionamiento de Oso Hormiguero, conviertiéndolo en ícono de la bodega. Realizamos esta campaña de vía pública para lanzarlo al mercado masivo, capitalizando su diseño y calidad.
+								</p>
+								<p class="extra-text client"><strong>Cliente: </strong>Finca Los Maza</p>
+
+								<div class="btn-container">
+									<a href="" class="btn btn-proyects fancybox">ver</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
 			</div>
 		</div>
+		
+
+		<!-- CUBE PORTFOLIO -->
+		
+		<div class="proyects-more">
+			
+		</div>
+
+
 	</section>
 	
 
 	<section class="contact" id="contact">
 		<div class="contact-title">
-			<h2 class="title">contacto</h2>
+			<h2 class="title">
+				<span id="title-12-1">con-</span>
+				<span id="title-12-2">tacto</span>
+			</h2>
 		</div>
 
 		<div class="contact-container cf">
@@ -524,7 +587,7 @@
 
 			<div class="subtitle-highlight" id="contact-parallax-2">
 				<span class="decoration"></span>
-				<p class="main-text">+541148977190<br><a href="mailto:buenas@s3lva.com">buenas@s3lva.com</a></p>
+				<p class="main-text">+5411.4897.7190<br><a href="mailto:buenas@s3lva.com">buenas@s3lva.com</a></p>
 			</div>
 
 		</div>
@@ -611,7 +674,6 @@
 	<script src="js/debug.addIndicators.min.js"></script>
 	<script src="js/covervid.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.fullPage.min.js"></script>
 
 	<script src="js/scripts.js"></script>
 </body>
