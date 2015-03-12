@@ -701,7 +701,7 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
 	//waypoint2.destroy();
 }, {
   offset: '95%'
-})
+});
 
 
 
@@ -711,15 +711,59 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
 
 
 
+/* ---------------------------------------------- */
+/*                 CUBE PORTFOLIO                 */
+/* ---------------------------------------------- */
 
 
 
 
 
+(function ($, window, document, undefined) {
 
+    var gridContainer = $('#grid-container')
 
+    // init cubeportfolio
+    gridContainer.cubeportfolio({
 
+        animationType: 'fadeOutTop',
 
+        gapHorizontal: 10,
+
+        gapVertical: 10,
+
+        gridAdjustment: 'responsive',
+
+        caption: 'zoom',
+
+        displayType: 'lazyLoading',
+
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxShowCounter: true,
+
+        // singlePage popup
+        singlePageDelegate: '.cbp-singlePage',
+        singlePageDeeplinking: true,
+        singlePageStickyNavigation: true,
+        singlePageShowCounter: true,
+        singlePageCallback: function (url, element) {
+            // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+        },
+
+        // singlePageInline
+        singlePageInlineDelegate: '.cbp-singlePageInline',
+        singlePageInlinePosition: 'above',
+        singlePageInlineShowCounter: true,
+        singlePageInlineCallback: function(url, element) {
+            // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
+        }
+    });
+})(jQuery, window, document);
 
 
 
