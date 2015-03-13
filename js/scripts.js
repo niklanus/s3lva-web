@@ -37,26 +37,74 @@ $(window).on("load resize",function(e){
 });
 
 $( document ).ready(function() {
-	/*$("#introText").Morphext({
-		animation: "",
-		separator: ",",
-		speed: 300
-	});*/
+	//$('#bgvideo').coverVid(1920, 1080);
+	$('#bgvideo').tubular({videoId: 'WklFUDU0u8U'});
 
-	/*
-	$('.work-slider').slick({
-		autoplay: true,
-		autoplaySpeed: 1500,
-		arrows: false,
-		fade: true
-	});*/
 
-	$('#bgvideo').coverVid(1920, 1080);
-
-    $(".fancybox").fancybox({
+    $("#fancybox-1").fancybox({
     	type: 'iframe',
     	padding: 0,
-    	autoHeight: true
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
+    });
+
+    $("#fancybox-2").fancybox({
+    	type: 'iframe',
+    	padding: 0,
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
+    });
+
+    $("#fancybox-4").fancybox({
+    	type: 'iframe',
+    	padding: 0,
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
+    });
+
+	$(".fancybox-5").fancybox({
+    	type: 'image',
+    	padding: 0,
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
+    });
+
+    $("#fancybox-7").fancybox({
+    	type: 'iframe',
+    	padding: 0,
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
+    });
+
+    $(".fancybox-8").fancybox({
+    	type: 'image',
+    	padding: 0,
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
     });
 });
 
@@ -438,13 +486,13 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1
 
 var tween10 = new TimelineMax ()
 	.add([
-		TweenMax.fromTo("#proyects-parallax-4-4", 1, {top: 400}, {top: 240, ease: Linear.easeNone})
+		TweenMax.fromTo("#proyects-parallax-4-4", 1, {top: -100}, {top: 300, ease: Linear.easeNone})
 		//,TweenMax.fromTo("#proyects-parallax-4-3", 1, {top: 350}, {top: 25, ease: Linear.easeNone})
 	]);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".proyect-4", triggerHook: "1", duration: vh*1.5})
-				.setTween(tween10)
-				.addTo(controller);
+	.setTween(tween10)
+	.addTo(controller);
 
 
 
@@ -527,7 +575,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1
 
 var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 0, duration: vh*2})
 	.setTween(TweenMax.from('#proyects-parallax-6-4', 0.5, {
-    	top: 1000
+    	top: 500
 	}))
 	.addTo(controller);
 

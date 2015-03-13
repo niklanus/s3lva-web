@@ -1613,14 +1613,20 @@ header {
   position: fixed;
   top: 0;
   display: block;
-  background: url(../img/intro-2-bg.jpg);
-  background-size: cover;
   z-index: -1; }
   @media only screen and (max-width: 767px) {
     .intro-2-bgvideo {
       background-image: url(../img/intro-2-bg-mobile.jpg); }
       .intro-2-bgvideo video {
         display: none; } }
+
+#tubular-container {
+  height: 110% !important;
+  z-index: -1 !important;
+  pointer-events: none !important; }
+
+#tubular-player {
+  pointer-events: none !important; }
 
 .intro-2-msg {
   display: table;
@@ -2106,7 +2112,7 @@ header {
       z-index: 1; }
     .proyect.proyect-4 .parallax-container #proyects-parallax-4-4 {
       width: 130px;
-      left: 20px;
+      left: -90px;
       z-index: 3; }
   .proyect.proyect-4 .btn-proyects {
     margin-top: 80px; }
@@ -2168,7 +2174,7 @@ header {
     .proyect.proyect-6 .parallax-container #proyects-parallax-6-4 {
       position: absolute;
       right: -30px;
-      top: 300px; }
+      top: 250px; }
   .proyect.proyect-7 .title {
     left: -90px;
     margin-bottom: 20px;

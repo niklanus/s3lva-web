@@ -311,8 +311,8 @@ header
 	position: fixed
 	top: 0
 	display: block
-	background: url(../img/intro-2-bg.jpg)
-	background-size: cover
+	//background: url(../img/intro-2-bg.jpg)
+	//background-size: cover
 	z-index: -1
 
 	@media only screen and (max-width: 767px)
@@ -320,6 +320,14 @@ header
 		
 		video
 			display: none
+
+#tubular-container
+	height: 110% !important
+	z-index: -1 !important
+	pointer-events: none !important
+
+#tubular-player
+	pointer-events: none !important
 		
 .intro-2-msg
 	display: table
@@ -917,7 +925,7 @@ header
 				z-index: 1
 			#proyects-parallax-4-4
 				width: 130px
-				left: 20px
+				left: -90px
 				z-index: 3
 
 		.btn-proyects
@@ -1002,7 +1010,7 @@ header
 				//width: 55%
 				position: absolute
 				right: -30px
-				top: 300px
+				top: 250px
 
 	&.proyect-7
 

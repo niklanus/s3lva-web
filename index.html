@@ -104,9 +104,10 @@
 
 	<section class="intro-2" id="intro-2">
 		<div class="intro-2-bgvideo">
-			<video id="bgvideo" autoplay loop>
+			<!--<video id="bgvideo" autoplay loop>
 				<source src="img/intro1080.mp4" type="video/mp4">
-			</video>
+			</video> -->
+			<div id="bgvideo"></div>
 		</div>
 
 		<div class="clear-0" id="clear-0"></div>
@@ -282,7 +283,7 @@
 						</div>
 
 						<div class="centered">
-							<a href="https://www.youtube.com/embed/q-Ftn2qsIQQ" class="btn btn-proyects fancybox">ver</a>
+							<a href="https://www.youtube.com/embed/q-Ftn2qsIQQ?rel=0&autoplay=1" class="btn btn-proyects" id="fancybox-1">ver</a>
 						</div>
 					</div>
 
@@ -323,7 +324,7 @@
 							</div>
 						</div>
 						<div class="righted">
-							<a href="" class="btn btn-proyects fancybox">ver</a>
+							<a href="https://player.vimeo.com/video/30031321?autoplay=1" class="btn btn-proyects" id="fancybox-2">ver</a>
 						</div>
 					</div>
 
@@ -364,7 +365,7 @@
 							</p>
 
 							<!-- <div class="righted">
-								<a href="" class="btn btn-proyects fancybox">ver</a>
+								<a href="" class="btn btn-proyects">ver</a>
 							</div> -->
 						</div>
 					</div>
@@ -388,14 +389,14 @@
 					<div class="col-sm-7">
 						<div class="parallax-container">
 							<!--<img src="img/work/4-1.jpg" alt="" id="proyects-parallax-4-3">-->
-							<img src="img/work/4-3.svg" alt="" id="proyects-parallax-4-4">
+							<img src="img/work/4-3.png" alt="" id="proyects-parallax-4-4">
 							<div class="video-container">
 								<video autoplay loop>
 									<source src="img/work/4.mp4" type="video/mp4">
 								</video>
 
 								<div class="righted">
-									<a href="" class="btn btn-proyects fancybox">ver</a>
+									<a href="https://player.vimeo.com/video/29982327?autoplay=1" class="btn btn-proyects" id="fancybox-4">ver</a>
 								</div>
 							</div>
 						</div>
@@ -434,13 +435,17 @@
 
 						<div class="subtitle-highlight" id="proyects-parallax-5-2">
 							<span class="decoration"></span>
-							<p class="main-text">reinventamos<br>la lista del super</p>
+							<p class="main-text">reinventamos<br>la lista de compras</p>
 							<p class="extra-text">
-								Utilizando escaneo OCR de tickets y algoritmos complejos, este app te ayuda tener registro de qué tienes y qué se está por terminar en tu alacena. ¡Hasta te sugiere recetas!
+								Utilizando escaneo OCR de tus tickets, este app te ayuda tener registro de qué tienes y qué se está por terminar en tu alacena. ¡Hasta te sugiere recetas!
 							</p>
 
 							<div class="righted">
-								<a href="" class="btn btn-proyects fancybox">ver</a>
+								<a rel="proyect-5-gallery" class="btn btn-proyects fancybox-5" href="img/work/5-gallery-1.jpg">ver</a>
+								<a rel="proyect-5-gallery" class="fancybox-5 hidden" href="img/work/5-gallery-2.jpg"></a>
+								<a rel="proyect-5-gallery" class="fancybox-5 hidden" href="img/work/5-gallery-3.jpg"></a>
+								<a rel="proyect-5-gallery" class="fancybox-5 hidden" href="img/work/5-gallery-4.jpg"></a>
+								<a rel="proyect-5-gallery" class="fancybox-5 hidden" href="img/work/5-gallery-5.jpg"></a>
 							</div>
 						</div>
 					</div>
@@ -465,7 +470,7 @@
 					<div class="col-sm-8">
 						<div class="parallax-container">
 							<div class="video-container" id="video-responsive-1">
-								<div id="player"></div>
+								<div id="player2"></div>
 							</div>
 							<img src="img/work/6-3.png" alt="" id="proyects-parallax-6-4">
 						</div>
@@ -487,9 +492,9 @@
 							</p>
 							<p class="extra-text client"><strong>Cliente: </strong>Converse</p>
 
-							<div class="righted">
-								<a href="" class="btn btn-proyects fancybox">ver</a>
-							</div>
+							<!--<div class="righted">
+								<a href="" class="btn btn-proyects">ver</a>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -534,7 +539,7 @@
 								<video autoplay loop>
 									<source src="img/work/7.mp4" type="video/mp4">
 								</video>
-								<a href="" class="btn btn-proyects fancybox">ver</a>
+								<a href="https://player.vimeo.com/video/17764670?autoplay=1" class="btn btn-proyects" id="fancybox-7">ver</a>
 							</div>
 						</div>
 					</div>
@@ -565,7 +570,7 @@
 								<p class="extra-text client"><strong>Cliente: </strong>Finca Los Maza</p>
 
 								<div class="btn-container">
-									<a href="" class="btn btn-proyects fancybox">ver</a>
+									<a href="img/work/8-gallery-1.jpg" class="btn btn-proyects fancybox-8">ver</a>
 								</div>
 							</div>
 						</div>
@@ -744,7 +749,7 @@
 	
 	<script src="js/fitvids.js"></script>
 	<script src="js/jquery.appear.js"></script>
-	
+	<!--
 	<script>
 		var tag = document.createElement('script');
 
@@ -778,8 +783,9 @@
 		    $('#video-responsive-1').appear();
 		}
 
-	</script>
-		
+	</script> -->
+	
+	<script src="js/jquery.tubular.1.0.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
@@ -790,8 +796,8 @@
 	<script src="js/jquery.blast.min.js"></script>
 	<script src="js/velocity.min.js"></script>
 	<script src="js/velocity.ui.min.js"></script>
-	<script src="js/debug.addIndicators.min.js"></script>
-	<script src="js/covervid.min.js"></script>
+	<!-- <script src="js/debug.addIndicators.min.js"></script> -->
+	<!-- <script src="js/covervid.min.js"></script> -->
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 
