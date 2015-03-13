@@ -23,7 +23,7 @@ $(window).on("load resize",function(e){
 		easing: 'easeInOutQuart'
 	});
 
-	$('#intro-smooth').smoothScroll({
+	$('.intro-smooth').smoothScroll({
 		speed: 1500,
 		easing: 'easeInOutQuart',
 		offset: viewportHeight
@@ -53,23 +53,21 @@ $( document ).ready(function() {
 
 	$('#bgvideo').coverVid(1920, 1080);
 
-	$(".typed").typed({
-        strings: ["innovación.", "estra^400tegia.", "viralización.", "storytelling.", "geek.", "branded content.", "posicionamiento.", "aplicaciones multiplataforma.", "marketing estratégico.", "consultoría.", "comunicación sostenible.", "impacto social."],
-        typeSpeed: 0,
-        loop: true,
-        startDelay: 0,
-        // backspacing speed
-        backSpeed: 0,
-        // time before backspacing
-        backDelay: 500,
-    });
-
     $(".fancybox").fancybox({
     	type: 'iframe',
     	padding: 0,
     	autoHeight: true
     });
 });
+
+
+
+$("#intro-main-btn").hover(function() {
+    $(this).text('¿Cómo estás?');
+  }, function() {
+    $(this).text('Hola persona');
+  }
+);
 
 $(".nav-btn").click(function() {
 	if ( $('body').hasClass('nav-visible') ) {
@@ -140,7 +138,7 @@ setInterval(function() {
 	el.setAttribute('transform', 'rotate('+ deg +' 50 50)')
 	}
 	var d = new Date()
-	//r(sec, 6*d.getSeconds())
+	r(sec, 6*d.getSeconds())
 	r(min, 6*d.getMinutes())
 	r(hour, 30*(d.getHours()%12) + d.getMinutes()/2)
 }, 1000)
@@ -161,6 +159,7 @@ var controller = new ScrollMagic.Controller();
 /*          ELEMENTOS VARIOS / PARALLAX           */
 /* ---------------------------------------------- */
 
+/*
 var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0", offset: 0, duration: vh})
 	.setTween(TweenMax.to('#intro-1', 0.5, {
     opacity: 0.2,
@@ -168,17 +167,12 @@ var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0",
 	}))
 	// .addIndicators()
 	.addTo(controller);
-
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#intro-2-2-msg", triggerHook: "1", offset: 150, duration: 5000})
-	.setPin("#pin1")
-	.addIndicators()
-	.addTo(controller);
 */
 
-var scene = new ScrollMagic.Scene({triggerElement: "#intro-2-2-msg", triggerHook: "1", offset: 150, duration: vh})
+
+var scene = new ScrollMagic.Scene({triggerElement: "#intro-2-2-msg", triggerHook: "1", offset: 400, duration: vh*0.6})
 	.setTween(TweenMax.to('#intro-2-3-msg', 0.5, {
-    	top: 300
+    	top: 350
 	}))
 	//.addIndicators()
 	.addTo(controller);
@@ -192,102 +186,61 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8",
 	// .addIndicators()
 	.addTo(controller);
 
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: -100, duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: -100, duration: 200})
 	.setTween(TweenMax.from('#mundo-parallax-3', 0.5, {
 		opacity: 0,
-    	left: -100
+    	left: -40
 	}))
 	// .addIndicators()
 	.addTo(controller);
 
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: -100, duration: 400})
-	.setTween(TweenMax.from('#mundo-parallax-3 .number', 0.5, {
-		scale: 4
-	}))
-	// .addIndicators()
-	.addTo(controller);
-*/
-
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 100, duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 100, duration: 200})
 	.setTween(TweenMax.from('#mundo-parallax-4', 0.5, {
 		opacity: 0,
-    	right: -100
+    	right: -60
 	}))
 	// .addIndicators()
 	.addTo(controller);
 
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 100, duration: 400})
-	.setTween(TweenMax.from('#mundo-parallax-4 .number', 0.5, {
-		scale: 4
-	}))
-	// .addIndicators()
-	.addTo(controller);
-*/
-
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 300, duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 300, duration: 200})
 	.setTween(TweenMax.from('#mundo-parallax-5', 0.5, {
 		opacity: 0,
-    	left: -100
+    	left: -20
 	}))
 	// .addIndicators()
 	.addTo(controller);
 
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 300, duration: 400})
-	.setTween(TweenMax.from('#mundo-parallax-5 .number', 0.5, {
-		scale: 4
-	}))
-	// .addIndicators()
-	.addTo(controller);
-*/
-
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 500, duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 500, duration: 200})
 	.setTween(TweenMax.from('#mundo-parallax-6', 0.5, {
 		opacity: 0,
-    	right: -100
+    	right: -90
 	}))
 	// .addIndicators()
 	.addTo(controller);
 
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 500, duration: 400})
-	.setTween(TweenMax.from('#mundo-parallax-6 .number', 0.5, {
-		scale: 4
-	}))
-	// .addIndicators()
-	.addTo(controller);
-*/
-
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 200})
 	.setTween(TweenMax.from('#mundo-parallax-7', 0.5, {
 		opacity: 0,
-    	left: 100
+    	left: 60
 	}))
 	// .addIndicators()
 	.addTo(controller);
 /*
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
-	.setTween(TweenMax.from('#mundo-parallax-7 .number', 0.5, {
-		scale: 4
-	}))
-	// .addIndicators()
-	.addTo(controller);
-
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "0.5", offset: 700, duration: 400})
-	.setTween(TweenMax.from('#mundo-parallax-7 .number', 0.5, {
-		scale: 4
-	}))
-	// .addIndicators()
-	.addTo(controller);
-*/
-
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "1", offset: 0, duration: vh*3})
 	.setTween(TweenMax.from('#mundo-pov', 0.5, {
 		top: 2000
 	}))
 	.addTo(controller);
+*/
+
+var tween15 = new TimelineMax ()
+	.add([
+		TweenMax.fromTo("#mundo-pov", 1, {top: 1000}, {top: 200, ease: Linear.easeNone})
+	]);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "1", offset: 200, duration: vh})
+				.setTween(tween15)
+				.addTo(controller);
 
 
 /* ---------------------------------------------- */
@@ -618,7 +571,11 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-7", triggerHook: "1
 	}))
 	.addTo(controller);
 
-
+var scene = new ScrollMagic.Scene({triggerElement: ".proyect-7", triggerHook: "1", offset: 0, duration: vh*2})
+	.setTween(TweenMax.to('#proyects-parallax-7-3', 0.5, {
+    	top: 0
+	}))
+	.addTo(controller);
 
 
 
@@ -658,23 +615,15 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-8", triggerHook: "1
 
 /* CONTACTO */
 
-var scene = new ScrollMagic.Scene({triggerElement: "#contact", triggerHook: "1", offset: 160, duration: 250})
+var scene = new ScrollMagic.Scene({triggerElement: "#contact", triggerHook: "1", offset: 160, duration: vh*1.5})
 	.setTween(TweenMax.from('#title-12-1', 0.5, {
-		opacity: 0,
-		left: -150
+		top: 400
 	}))
 	.addTo(controller);
 
-var scene = new ScrollMagic.Scene({triggerElement: "#contact", triggerHook: "1", offset: 240, duration: 250})
-	.setTween(TweenMax.from('#title-12-2', 0.5, {
-		opacity: 0,
-		left: -150
-	}))
-	.addTo(controller);	
-
-var scene = new ScrollMagic.Scene({triggerElement: "#contact", triggerHook: "1", offset: 0, duration: vh*2})
+var scene = new ScrollMagic.Scene({triggerElement: "#contact", triggerHook: "1", offset: 0, duration: vh*1.5})
 	.setTween(TweenMax.from('#contact-parallax-3', 0.5, {
-    	top: 1000
+    	top: -300
 	}))
 	.addTo(controller);
 
@@ -694,7 +643,6 @@ var waypoint1 = $('.intro-2-msg').waypoint(function(direction) {
 	    stagger: 50,
 	    delay: 0
 	});
-	//waypoint1.destroy();
 }, {
   offset: '90%'
 })*/
@@ -705,14 +653,30 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
 	    stagger: 80,
 	    delay: 0
 	});
-	//waypoint2.destroy();
 }, {
   offset: '95%'
 });
 
+var waypoint3 = $('#intro-1').waypoint(function(direction) {
+	$(".typed").typed({
+	    strings: ["innovación.", "estrategia.", "viralización.", "storytelling.", "geek.", "branded content.", "posicionamiento.", "aplicaciones multiplataforma.", "marketing estratégico.", "consultoría.", "comunicación sostenible.", "impacto social."],
+	    typeSpeed: 0,
+	    loop: true,
+	    startDelay: 0,
+	    // backspacing speed
+	    backSpeed: 0,
+	    // time before backspacing
+	    backDelay: 500,
+	});
+}, {
+  offset: -vh*0.6
+});
 
-
-
+var waypoint4 = $('#intro-2-2-msg').waypoint(function(direction) {
+	$("#intro-2-msg .part-1").toggleClass('hidden');
+}, {
+  offset: 250
+});
 
 
 
@@ -770,12 +734,7 @@ var waypoint2 = $('#mundo-parallax-1').waypoint(function(direction) {
 })(jQuery, window, document);
 
 $("#proyects-more-show").click(function() {
-	$(this).animate({
-	    opacity: 0,
-	    height: "0"
-	  }, 400, function() {
-	    $('#grid-container').removeClass('proyects-more-hidden');
-	});
+	$('#grid-container').toggleClass('proyects-more-hidden');
 });
 
 

@@ -90,6 +90,7 @@ figure {
   margin: 1em 40px; }
 
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -140,7 +141,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -151,6 +153,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -917,6 +920,9 @@ th {
 .lefted {
   text-align: left; }
 
+.hidden {
+  display: none !important; }
+
 .mobile {
   display: none; }
 
@@ -984,6 +990,7 @@ th {
 .slick-slider {
   position: relative;
   display: block;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1327,7 +1334,8 @@ body {
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/ } }
 * {
-  box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 p, a, li, h1, h2, h3, h4, input, textarea {
   -webkit-font-smoothing: antialiased; }
@@ -1354,7 +1362,7 @@ body {
 
 header {
   width: 100%;
-  padding: 10px 0 0 0;
+  padding: 0;
   display: block;
   position: absolute;
   top: 0;
@@ -1371,6 +1379,16 @@ header {
     header.header-fixed.visible {
       opacity: 1;
       top: 0; }
+    header.header-fixed .nav-btn {
+      width: 65px !important;
+      height: 65px !important; }
+      header.header-fixed .nav-btn .nav-btn-inner {
+        left: 19px;
+        top: 22px; }
+    header.header-fixed .header-logo {
+      width: 96px;
+      height: 24px;
+      top: 20px; }
   header .header-logo {
     width: 120px;
     height: 30px;
@@ -1404,28 +1422,11 @@ header {
   outline: 0;
   text-align: center;
   position: relative;
-  border-radius: 35px;
   translate3d: 0, 0, 0;
   -webkit-transition: all 500ms;
   transition: all 500ms; }
-  .nav-btn .nav-hover {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    display: block;
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2);
-    background-color: transparent;
-    z-index: -1;
-    border-radius: 40px;
-    -webkit-transition: all 500ms;
-    transition: all 500ms; }
-  .nav-btn:hover .nav-hover {
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    background-color: rgba(0, 0, 0, 0.2); }
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
   .nav-btn i {
     position: relative;
     top: 3px;
@@ -1433,11 +1434,11 @@ header {
   .nav-btn .nav-btn-inner {
     display: inline-block;
     position: absolute;
-    left: 24px;
+    left: 27px;
     top: 30px; }
   .nav-btn span {
-    width: 32px;
-    height: 3px;
+    width: 28px;
+    height: 2px;
     display: inline-block;
     position: absolute;
     background-color: white; }
@@ -1446,12 +1447,12 @@ header {
     -webkit-transition: all 250ms;
     transition: all 250ms; }
   .nav-btn .nav-btn-2 {
-    top: 9px;
+    top: 8px;
     opacity: 100;
     -webkit-transition: all 250ms;
     transition: all 250ms; }
   .nav-btn .nav-btn-3 {
-    top: 18px;
+    top: 16px;
     -webkit-transition: all 250ms;
     transition: all 250ms; }
 
@@ -1476,7 +1477,8 @@ header {
   cursor: pointer;
   text-transform: uppercase;
   height: 44px;
-  line-height: 44px; }
+  line-height: 44px;
+  outline: 0; }
   .btn.btn-main {
     color: #f3656a;
     background-color: white;
@@ -1484,12 +1486,14 @@ header {
     font-weight: 500;
     background-clip: padding-box;
     text-transform: none;
+    border: 2px solid white;
     -webkit-transition: all 250ms;
     transition: all 250ms; }
     .btn.btn-main i {
       margin-left: 5px; }
     .btn.btn-main:hover {
-      padding: 0px 30px; }
+      background-color: transparent;
+      color: white; }
   .btn.btn-proyects {
     border: 4px solid #3fa9f5;
     color: #3fa9f5;
@@ -1554,11 +1558,12 @@ header {
 .intro-btn-container {
   width: 100%;
   position: absolute;
-  bottom: 5%; }
-  .intro-btn-container .btn:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1); }
+  bottom: 1%; }
+  .intro-btn-container .arrow {
+    display: block;
+    color: white;
+    font-size: 2em;
+    margin-top: 10px; }
 
 .intro-more {
   width: 100%;
@@ -1659,7 +1664,7 @@ header {
   text-align: center; }
 
 .part-2-1, .part-2-2 {
-  padding: 100px 0;
+  padding: 121px 0;
   background-color: white;
   position: relative; }
   .part-2-1 p, .part-2-2 p {
@@ -1685,7 +1690,7 @@ header {
 
 .part-2-2 {
   width: 100%;
-  background-color: #3fa9f5;
+  background-color: rgba(63, 169, 245, 0.6);
   color: white;
   position: absolute;
   top: 0;
@@ -1740,13 +1745,13 @@ header {
     width: 130px;
     font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.4em;
-    color: #b3ddfb;
+    color: #a0d4fa;
     font-weight: normal;
     line-height: 1;
     letter-spacing: -0.025em;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -80px;
     text-align: right;
     margin: 0;
     clear: both; }
@@ -1762,13 +1767,13 @@ header {
   display: inline-block; }
 
 #face {
-  stroke-width: 1px;
-  stroke: #b3ddfb;
+  stroke-width: 2px;
+  stroke: #a0d4fa;
   fill: none; }
 
 #hour, #min, #sec {
   stroke-width: 1px;
-  fill: #b3ddfb; }
+  fill: #a0d4fa; }
 
 #sec {
   stroke: #f55; }
@@ -1778,13 +1783,13 @@ header {
   position: relative;
   margin-bottom: 70px; }
   .subtitle-highlight .main-text {
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1;
     margin: 0;
     font-weight: bold;
     text-decoration: underline; }
   .subtitle-highlight .extra-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif; }
   .subtitle-highlight .decoration {
     display: block;
@@ -1818,7 +1823,7 @@ header {
       letter-spacing: -0.02em; }
 
 .point {
-  width: 290px;
+  width: 250px;
   float: left;
   clear: both;
   position: relative;
@@ -1830,12 +1835,12 @@ header {
     margin: 0;
     line-height: 65px; }
   .point .subtitle {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin: 0;
     font-weight: bold;
     text-decoration: underline; }
   .point .text {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Vollkorn", "Helvetica Neue", Helvetica, sans-serif;
     margin: 5px 0 0 0; }
   .point.alt {
@@ -2034,8 +2039,8 @@ header {
       .proyect.proyect-3 .righted {
         text-align: center; } }
     .proyect.proyect-3 .video-container {
-      width: 340px;
-      height: 746px;
+      width: 289px;
+      height: 634px;
       background: url(../img/work/3-bg.jpg);
       float: right;
       z-index: 2;
@@ -2047,10 +2052,10 @@ header {
           position: relative;
           left: -7px; } }
       .proyect.proyect-3 .video-container video {
-        width: 295px;
+        width: 252px;
         /* height: 540px */
-        left: 29px;
-        top: 100px;
+        left: 24px;
+        top: 91px;
         position: relative; }
   .proyect.proyect-4 .title {
     margin-bottom: 40px;
@@ -2123,6 +2128,12 @@ header {
     position: relative;
     width: 100%;
     height: auto; }
+  .proyect.proyect-5 #proyects-parallax-5-5 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: -60px;
+    top: -60px; }
   .proyect.proyect-6 .title {
     margin-bottom: 40px;
     text-align: right; }
@@ -2141,18 +2152,19 @@ header {
     margin-bottom: 20px;
     text-align: right; }
   .proyect.proyect-6 .subtitle-highlight .extra-text {
-    clear: both; }
+    clear: both;
+    text-align: right; }
   .proyect.proyect-6 .parallax-container {
     position: relative;
-    margin-right: 20px; }
+    margin-right: 20px;
+    top: 220px; }
     .proyect.proyect-6 .parallax-container #proyects-parallax-6-3 {
       width: 100%;
       height: auto; }
     .proyect.proyect-6 .parallax-container #proyects-parallax-6-4 {
-      width: 55%;
       position: absolute;
       right: -30px;
-      top: 200px; }
+      top: 300px; }
   .proyect.proyect-7 .title {
     left: -90px;
     margin-bottom: 20px;
@@ -2181,6 +2193,10 @@ header {
     white-space: nowrap; }
   .proyect.proyect-7 .subtitle-highlight .extra-text {
     padding-left: 20px; }
+  .proyect.proyect-7 #proyects-parallax-7-3 {
+    position: relative;
+    top: 180px;
+    z-index: 3; }
   .proyect.proyect-8 {
     text-align: right; }
     .proyect.proyect-8 .title {
@@ -2218,30 +2234,22 @@ header {
   right: 0;
   bottom: 0px; }
 
-.proyects-more .btn-more {
-  width: 150px;
-  height: 150px;
-  border: 0;
-  background-color: #3fa9f5;
-  color: white;
-  line-height: 1 !important;
-  outline: 0; }
-  .proyects-more .btn-more span {
-    font-size: 1.8em;
-    line-height: 1.05;
-    font-weight: bold;
-    text-decoration: underline;
-    text-transform: lowercase !important; }
-  .proyects-more .btn-more img {
-    width: 60px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px; }
-  .proyects-more .btn-more:hover {
-    background-color: #0a76c4; }
-  .proyects-more .btn-more:focus {
-    background-color: #0a76c4; }
+.proyects-more {
+  margin-top: 150px; }
+  .proyects-more .btn-proyects {
+    color: white;
+    background: #3fa9f5;
+    -webkit-transition: all 250ms;
+    transition: all 250ms; }
+    .proyects-more .btn-proyects img {
+      width: 60px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      margin-top: 20px; }
+    .proyects-more .btn-proyects:hover {
+      color: #3fa9f5 !important;
+      background: white url(../img/line-pattern-btn.png) repeat !important; }
 
 .proyects-more-hidden {
   visibility: hidden !important;
@@ -2249,14 +2257,15 @@ header {
   overflow: hidden !important; }
 
 .contact {
-  padding-top: 100px;
+  padding-top: 200px;
   background: white; }
 
 .contact-title {
   padding: 44px 40px 40px 40px;
   border: 2px solid black;
   border-left: 0px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
   .contact-title .title {
     margin: 0 0 0 100px; }
 
@@ -2285,7 +2294,7 @@ header {
 #contact-parallax-3 {
   width: 120px;
   position: absolute;
-  top: 0px;
+  top: 205px;
   right: 200px; }
 
 footer {

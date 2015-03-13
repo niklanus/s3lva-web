@@ -39,7 +39,7 @@ body
 
 header
 	width: 100%
-	padding: 10px 0 0 0 
+	padding: 0 
 	display: block
 	position: absolute
 	top: 0
@@ -59,6 +59,19 @@ header
 		&.visible
 			opacity: 1
 			top: 0
+
+		.nav-btn
+			width: 65px !important
+			height: 65px !important
+
+			.nav-btn-inner
+				left: 19px
+				top: 22px
+
+		.header-logo
+			width: 96px
+			height: 24px
+			top: 20px
 
 
 	.header-logo
@@ -95,25 +108,11 @@ header
 	outline: 0
 	text-align: center
 	position: relative
-	border-radius: 35px
 	translate3d: (0,0,0)
 	@include hover-slow
-	
-	.nav-hover
-		position: absolute
-		width: 80px
-		height: 80px
-		display: block
-		transform: scale(2)
-		background-color: transparent
-		z-index: -1
-		border-radius: 40px
-		@include hover-slow
 
 	&:hover
-		.nav-hover
-			transform: scale(1)
-			background-color: rgba(0,0,0,0.2)
+		background-color: rgba(0,0,0,0.10)
 
 
 	i
@@ -124,12 +123,12 @@ header
 	.nav-btn-inner
 		display: inline-block
 		position: absolute
-		left: 24px
+		left: 27px
 		top: 30px
 
 	span
-		width: 32px
-		height: 3px
+		width: 28px
+		height: 2px
 		display: inline-block
 		position: absolute
 		background-color: white
@@ -138,11 +137,11 @@ header
 		top: 0px
 		@include hover
 	.nav-btn-2
-		top: 9px
+		top: 8px
 		opacity: 100
 		@include hover
 	.nav-btn-3
-		top: 18px
+		top: 16px
 		@include hover
 
 .nav-visible
@@ -167,6 +166,7 @@ header
 	text-transform: uppercase
 	height: 44px
 	line-height: 44px
+	outline: 0
 
 	&.btn-main
 		color: #f3656a
@@ -175,13 +175,15 @@ header
 		font-weight: 500
 		background-clip: padding-box
 		text-transform: none
+		border: 2px solid white
 		@include hover
 
 		i
 			margin-left: 5px
 
 		&:hover
-			padding: 0px 30px
+			background-color: transparent
+			color: white
 
 	&.btn-proyects
 		border: 4px solid $blue
@@ -233,8 +235,6 @@ header
 		@media only screen and (max-height: 640px)
 			padding: 0
 
-
-
 	p
 		max-width: 767px
 		font-size: 2em
@@ -253,13 +253,14 @@ header
 .intro-btn-container
 	width: 100%
 	position: absolute
-	bottom: 5%
+	bottom: 1%
+	
+	.arrow
+		display: block
+		color: white
+		font-size: 2em
+		margin-top: 10px
 
-	.btn
-		//color: $blue
-
-		&:hover
-			transform: scale(1.1)
 
 .intro-more
 	width: 100%
@@ -373,7 +374,7 @@ header
 	text-align: center
 
 .part-2-1, .part-2-2
-	padding: 100px 0
+	padding: 121px 0
 	background-color: white
 	position: relative
 
@@ -402,7 +403,7 @@ header
 
 .part-2-2
 	width: 100%
-	background-color: $blue
+	background-color: rgba(63,169,245,0.6)
 	color: white
 	position: absolute
 	top: 0
@@ -477,13 +478,13 @@ header
 		width: 130px
 		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
 		font-size: 1.4em
-		color: lighten($blue,24)
+		color: lighten($blue,20)
 		font-weight: normal
 		line-height: 1
 		letter-spacing: -0.025em
 		position: absolute
 		right: 0
-		top: 0
+		top: -80px
 		text-align: right
 		margin: 0
 		clear: both
@@ -502,13 +503,13 @@ header
 	display: inline-block
 
 #face
-	stroke-width: 1px
-	stroke: lighten($blue,24)
+	stroke-width: 2px
+	stroke: lighten($blue,20)
 	fill: none
 
 #hour, #min, #sec
 	stroke-width: 1px
-	fill: lighten($blue,24)
+	fill: lighten($blue,20)
 #sec
 	stroke: #f55
 
@@ -518,14 +519,14 @@ header
 	margin-bottom: 70px
 
 	.main-text
-		font-size: 1.6em
+		font-size: 1.5em
 		line-height: 1
 		margin: 0
 		font-weight: bold
 		text-decoration: underline
 
 	.extra-text
-		font-size: 1.3em
+		font-size: 1.2em
 		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
 
 
@@ -564,7 +565,7 @@ header
 			letter-spacing: -0.02em
 
 .point
-	width: 290px
+	width: 250px
 	float: left
 	clear: both
 	position: relative
@@ -578,13 +579,13 @@ header
 		line-height: 65px
 
 	.subtitle
-		font-size: 1.4em
+		font-size: 1.3em
 		margin: 0
 		font-weight: bold
 		text-decoration: underline
 
 	.text
-		font-size: 1.3em
+		font-size: 1.2em
 		font-family: 'Vollkorn', 'Helvetica Neue', Helvetica, sans-serif
 		margin: 5px 0 0 0
 
@@ -830,8 +831,8 @@ header
 				text-align: center
 
 		.video-container
-			width: 340px
-			height: 746px
+			width: 289px
+			height: 634px
 			background: url(../img/work/3-bg.jpg)
 			float: right
 			z-index: 2
@@ -844,10 +845,10 @@ header
 				left: -7px
 
 			video
-				width: 295px
+				width: 252px
 				/* height: 540px */
-				left: 29px
-				top: 100px
+				left: 24px
+				top: 91px
 				position: relative
 
 	&.proyect-4
@@ -945,6 +946,14 @@ header
 			width: 100%
 			height: auto
 
+		#proyects-parallax-5-5
+			width: 100%
+			height: auto
+			position: relative
+			left: -60px
+			top: -60px
+
+
 	&.proyect-6
 		.title
 			margin-bottom: 40px
@@ -971,20 +980,22 @@ header
 
 			.extra-text
 				clear: both
+				text-align: right
 
 		.parallax-container
 			position: relative
 			margin-right: 20px
+			top: 220px
 
 			#proyects-parallax-6-3
 				width: 100%
 				height: auto
 
 			#proyects-parallax-6-4
-				width: 55%
+				//width: 55%
 				position: absolute
 				right: -30px
-				top: 200px
+				top: 300px
 
 	&.proyect-7
 
@@ -1025,6 +1036,11 @@ header
 
 			.extra-text
 				padding-left: 20px
+
+		#proyects-parallax-7-3
+			position: relative
+			top: 180px
+			z-index: 3
 
 	&.proyect-8
 		text-align: right
@@ -1074,22 +1090,11 @@ header
 
 
 .proyects-more
-	.btn-more
-		width: 150px
-		height: 150px
-		border: 0
-		background-color: $blue
+	margin-top: 150px
+	.btn-proyects
 		color: white
-		line-height: 1 !important
-		outline: 0
-		// @include hover
-
-		span
-			font-size: 1.8em
-			line-height: 1.05
-			font-weight: bold
-			text-decoration: underline
-			text-transform: lowercase !important
+		background: $blue
+		@include hover
 
 		img
 			width: 60px
@@ -1099,9 +1104,9 @@ header
 			margin-top: 20px
 
 		&:hover
-			background-color: darken($blue,20)
-		&:focus
-			background-color: darken($blue,20)
+			color: $blue !important
+			background: white url(../img/line-pattern-btn.png) repeat !important
+
 
 .proyects-more-hidden
 	visibility: hidden !important
@@ -1133,7 +1138,7 @@ header
 
 
 .contact
-	padding-top: 100px
+	padding-top: 200px
 	background: white
 
 .contact-title
@@ -1141,6 +1146,7 @@ header
 	border: 2px solid black
 	border-left: 0px
 	display: inline-block
+	position: relative
 
 	.title
 		margin: 0 0 0 100px
@@ -1173,7 +1179,7 @@ header
 #contact-parallax-3
 	width: 120px
 	position: absolute
-	top: 0px
+	top: 205px
 	right: 200px
 
 

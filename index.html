@@ -48,7 +48,6 @@
 	                <span class="nav-btn-2"></span>
 	                <span class="nav-btn-3"></span>
 	            </div>
-	            <div class="nav-hover"></div>
 	        </a>
 		</div>
 	</header>
@@ -64,7 +63,6 @@
 	                <span class="nav-btn-2"></span>
 	                <span class="nav-btn-3"></span>
 	            </div>
-	            <div class="nav-hover"></div>
 	        </a>
 		</div>
 	</header>
@@ -74,7 +72,7 @@
 			<li><a href="#mundo">Cómo ser una marca viva</a></li>
 			<li><a href="#aboutus">Sobre Nosotros</a></li>
 			<li><a href="#proyects">Trabajos</a></li>
-			<li class="nav-proyect"><a href="#proyect-1">Twitter</a></li>
+			<li class="nav-proyect"><a href="#proyect-1">Smart</a></li>
 			<li class="nav-proyect"><a href="#proyect-2">Apptista</a></li>
 			<li class="nav-proyect"><a href="#proyect-3">Trova</a></li>
 			<li class="nav-proyect"><a href="#proyect-4">Red Light Cinema</a></li>
@@ -97,7 +95,10 @@
 			</p>
 
 			<div class="intro-btn-container">
-				<a class="btn btn-main" href="#intro-2-msg" id="intro-smooth">¡Así es cómo lo hacemos!<i class="arrow_carrot-down_alt"></i></a>
+				<a class="btn btn-main intro-smooth" href="#intro-2-msg" id="intro-main-btn">Hola persona</a>
+				<a class="arrow intro-smooth" href="#intro-2-msg"><i class="arrow_carrot-down"></i></a>
+				
+
 			</div>
 		</div>
 	</section>
@@ -109,7 +110,7 @@
 			</video>
 		</div>
 
-		<div class="clear-0"></div>
+		<div class="clear-0" id="clear-0"></div>
 
 		<div class="intro-2-msg" id="intro-2-msg">
 			<div class="part-1">
@@ -151,12 +152,13 @@
 							<svg id="clock" viewBox="0 0 100 100">
 								<circle id="face" cx="50" cy="50" r="45"/>
 								<g id="hands">
-								<rect id="hour" x="48.5" y="12.5" width="3" height="40"/>
+								<line id="sec" x1="50" y1="50" x2="50" y2="16"/>
+								<rect id="hour" x="48.5" y="17.5" width="3" height="30"/>
 								<rect id="min" x="48" y="12.5" width="3" height="40"/>
 								</g>
 							</svg>
 
-							<!-- <line id="sec" x1="50" y1="50" x2="50" y2="16" /> -->
+							
 						</div>
 						<div class="col-xs-8">
 							<strong id="theDate"></strong>
@@ -271,7 +273,7 @@
 						<span class="decoration">
 							<img src="img/title-decoration.svg" alt="">
 						</span>
-						twitter
+						smart
 					</h2>
 					<div class="col-sm-7">
 						<div class="video-container">
@@ -333,7 +335,7 @@
 							<span class="decoration"></span>
 							<p class="main-text">el arte de integrar aplicaciones</p>
 							<p class="extra-text">
-								Xperia necesitaba comunicar la integración las poderosas Google Apps en su sistema Android. La campaña salió por MTV Latinoamérica y además se invitó a la teleplatea a participar, enviando sus propias ideas de un app.
+								Xperia necesitaba comunicar la integración las poderosas Google Apps en su sistema Android.<br>La campaña salió por MTV Latinoamérica y además se invitó a la teleplatea a participar, enviando sus propias ideas de un app.
 							</p>
 							<p class="extra-text client"><strong>Cliente: </strong>Sony América Latina</p>
 							<img src="img/work/2-3.png" alt="" id="proyects-parallax-2-5">
@@ -433,9 +435,9 @@
 
 						<div class="subtitle-highlight" id="proyects-parallax-5-2">
 							<span class="decoration"></span>
-							<p class="main-text">remind me<br>to buy</p>
+							<p class="main-text">reinventamos<br>la lista del super</p>
 							<p class="extra-text">
-								Define tus hábitos de consumo. <br>Escanea tus tickets de compra.
+								Utilizando escaneo OCR de tickets y algoritmos complejos, este app te ayuda tener registro de qué tienes y qué se está por terminar en tu alacena. ¡Hasta te sugiere recetas!
 							</p>
 
 							<div class="righted">
@@ -444,10 +446,13 @@
 						</div>
 					</div>
 
-					<div class="col-sm-8">
+					<div class="col-sm-1"></div>
+
+					<div class="col-sm-7">
 						<div class="parallax-container">
-							<img src="img/work/5-1.png" alt="" id="proyects-parallax-5-3">
-							<img src="img/work/5-2.jpg" alt="" id="proyects-parallax-5-4">
+							<!--<img src="img/work/5-1.png" alt="" id="proyects-parallax-5-3">
+							<img src="img/work/5-2.jpg" alt="" id="proyects-parallax-5-4">-->
+							<img src="img/work/5-3.jpg" alt="" id="proyects-parallax-5-5">
 						</div>
 					</div>
 				</div>
@@ -458,17 +463,17 @@
 						<div class="pattern-decoration"></div>
 					</div>
 
-					<div class="col-sm-7">
+					<div class="col-sm-8">
 						<div class="parallax-container">
 							<div class="video-container" id="video-responsive-1">
 								<div id="player"></div>
 							</div>
-							<img src="img/work/6-2.svg" alt="" id="proyects-parallax-6-4">
+							<img src="img/work/6-3.png" alt="" id="proyects-parallax-6-4">
 						</div>
 						
 					</div>
 
-					<div class="col-sm-5">
+					<div class="col-sm-4">
 						<h2 class="title">
 							<span id="title-9-1">viral</span>
 							<span id="title-9-2">zapatilla</span>
@@ -508,15 +513,19 @@
 							<div class="subtitle-highlight" id="proyects-parallax-7-2">
 								<div class="col-md-4">
 									<span class="decoration"></span>
-									<p class="main-text">logramos<br>conectar el<br>fútbol y la<br>seducción.</p>
+									<p class="main-text">conectamos<br>el fútbol<br>con la<br>seducción.</p>
 								</div>
 								<div class="col-md-8">
 									<p class="extra-text">
-										Creamos este branded content en stopmotion, conectando las jugadas más memorables con los trucos de seducción más osados.<br> La campaña se lanzó durante el Mundial de la FIFA.
+										Creamos este branded content de 12 episodios durante el Mundial de la FIFA. Cada historia es un homenaje a una jugada histórica del fútbol.<br>El objetivo es el mismo: Conquistar mujeres.
 									</p>
 									<p class="extra-text client"><strong>Cliente: </strong>Unilever México</p>
 								</div>
 							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-5">
+							<img src="img/work/7-1.png" alt="" id="proyects-parallax-7-3">
 						</div>
 					</div>
 
@@ -542,7 +551,7 @@
 						<div class="col-sm-7">
 
 							<div class="parallax-container">
-								<img src="img/work/8.svg" alt="" id="proyects-parallax-8-3">
+								<img src="img/work/8-1.jpg" alt="" id="proyects-parallax-8-3">
 							</div>
 						</div>
 
@@ -573,9 +582,8 @@
 		<!-- CUBE PORTFOLIO -->
 
 		<div class="proyects-more centered">
-			<button class="btn btn-more" id="proyects-more-show">
-				<span>ver<br>más</span>
-				<img src="img/decoration-6.svg" alt="">
+			<button class="btn btn-proyects" id="proyects-more-show">
+				+ trabajos
 			</button>
 		</div>
 
@@ -684,11 +692,8 @@
 	
 
 	<section class="contact" id="contact">
-		<div class="contact-title">
-			<h2 class="title">
-				<span id="title-12-1">con-</span>
-				<span id="title-12-2">tacto</span>
-			</h2>
+		<div class="contact-title" id="title-12-1">
+			<h2 class="title">contacto</h2>
 		</div>
 
 		<div class="contact-container cf">
