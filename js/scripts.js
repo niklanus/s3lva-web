@@ -159,22 +159,11 @@ var controller = new ScrollMagic.Controller();
 /*          ELEMENTOS VARIOS / PARALLAX           */
 /* ---------------------------------------------- */
 
-/*
-var scene = new ScrollMagic.Scene({triggerElement: "#intro-1", triggerHook: "0", offset: 0, duration: vh})
-	.setTween(TweenMax.to('#intro-1', 0.5, {
-    opacity: 0.2,
-    scale: 1
-	}))
-	// .addIndicators()
-	.addTo(controller);
-*/
-
 
 var scene = new ScrollMagic.Scene({triggerElement: "#intro-2-2-msg", triggerHook: "1", offset: 400, duration: vh*0.6})
-	.setTween(TweenMax.to('#intro-2-3-msg', 0.5, {
-    	top: 350
+	.setTween(TweenMax.to('#intro-2-2-msg', 0.5, {
+    	paddingBottom: 296
 	}))
-	//.addIndicators()
 	.addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "0.8", offset: 200, duration: 400})
@@ -235,10 +224,10 @@ var scene = new ScrollMagic.Scene({triggerElement: "#mundo", triggerHook: "1", o
 
 var tween15 = new TimelineMax ()
 	.add([
-		TweenMax.fromTo("#mundo-pov", 1, {top: 1000}, {top: 200, ease: Linear.easeNone})
+		TweenMax.fromTo("#mundo-pov", 1, {top: 1400}, {top: 0, ease: Linear.easeNone})
 	]);
 
-var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "1", offset: 200, duration: vh})
+var scene = new ScrollMagic.Scene({triggerElement: "#mundo-parallax-2", triggerHook: "1", offset: 400, duration: vh*0.6})
 				.setTween(tween15)
 				.addTo(controller);
 

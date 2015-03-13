@@ -8,7 +8,7 @@
 
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
 	<title>S3LVA</title>
 	<meta name="description" content="Conectamos marcas vivas con personas.">
 
@@ -89,7 +89,6 @@
 			<img class="intro-logo" src="img/intro-logo.svg" alt="S3LVA">
 
 			<p>
-				<img src="img/decoration-1.svg" alt="" class="decoration">
 				Conectamos marcas vivas con personas.
 				<img src="img/decoration-1.svg" alt="" class="decoration">
 			</p>
@@ -169,7 +168,7 @@
 				
 
 				<div class="points-container cf">
-					<div class="pov" id="mundo-pov">
+					<div class="pov cf" id="mundo-pov">
 						<p>nuestro punto<br>de vista</p>
 					</div>
 
@@ -189,7 +188,7 @@
 					<div class="point alt cf" id="mundo-parallax-4">
 						<div class="row">
 							<p class="number">4</p>
-							<p class="subtitle">ser verdadero</p>
+							<p class="subtitle">la verdad</p>
 							<p class="text">Autenticidad, transparencia y responsabilidad son valores que los usuarios reclaman a cambio de su lealtad.</p>
 						</div>
 					</div>
@@ -197,7 +196,7 @@
 					<div class="point cf" id="mundo-parallax-5">
 						<div class="row">
 							<p class="number">3</p>
-							<p class="subtitle">relevante</p>
+							<p class="subtitle">relevancia</p>
 							<p class="text">Contar historias que nos conecten emocionalmente con nuestra propia humanidad y den ganas de compartirlas.</p>
 						</div>
 					</div>
@@ -205,7 +204,7 @@
 					<div class="point alt cf" id="mundo-parallax-6">
 						<div class="row">
 							<p class="number">2</p>
-							<p class="subtitle">simple</p>
+							<p class="subtitle">simpleza</p>
 							<p class="text">Definir que es lo que se está vendiendo en una forma muy clara. Sin promesas ni adornos.</p>
 						</div>
 					</div>
@@ -335,7 +334,7 @@
 							<span class="decoration"></span>
 							<p class="main-text">el arte de integrar aplicaciones</p>
 							<p class="extra-text">
-								Xperia necesitaba comunicar la integración las poderosas Google Apps en su sistema Android.<br>La campaña salió por MTV Latinoamérica y además se invitó a la teleplatea a participar, enviando sus propias ideas de un app.
+								Xperia necesitaba comunicar la integración de las poderosas Google Apps en su sistema Android. Invitamos a la audiencia de MTV a participar enviando sus propias ideas de un app. La idea premiada fue desarrollada.
 							</p>
 							<p class="extra-text client"><strong>Cliente: </strong>Sony América Latina</p>
 							<img src="img/work/2-3.png" alt="" id="proyects-parallax-2-5">
@@ -359,14 +358,14 @@
 
 						<div class="subtitle-highlight" id="proyects-parallax-3-2">
 							<span class="decoration"></span>
-							<p class="main-text">unforgetable (that’s what you app)</p>
+							<p class="main-text">unforgettable (that’s what you app)</p>
 							<p class="extra-text">
 								Al final del día, una de cada cinco personas no recuerda dónde estacionó su vehículo. Se desarrolló este modelo de app para Subaru que se comunica automáticamente con el bluetooth del vehículo.
 							</p>
 
-							<div class="righted">
+							<!-- <div class="righted">
 								<a href="" class="btn btn-proyects fancybox">ver</a>
-							</div>
+							</div> -->
 						</div>
 					</div>
 
@@ -412,11 +411,11 @@
 
 						<div class="subtitle-highlight" id="proyects-parallax-4-2">
 							<span class="decoration"></span>
-							<p class="main-text">creamos un auto-cinema de semáforo</p>
+							<p class="main-text">creamos un auto-cine de semáforo</p>
 							<p class="extra-text">
-								Mientras la gente esta parada en el semaforo, convertimos un espacio aburrido en un cine con peliculas que duran lo que una luz roja.
+								Convertimos el tiempo de espera del semáforo en un espacio de entretenimiento. Proyectamos mini peliculas que duran lo que una luz roja.
 							</p>
-							<p class="extra-text client"><strong>Cliente: </strong>Adidas Latam</p>
+							<p class="extra-text client"><strong>Cliente: </strong>Adidas Latinoamérica</p>
 						</div>
 					</div>
 				</div>
@@ -731,7 +730,7 @@
 		$(window).load(function() {
 			$('#preloader-status').fadeOut(800);
 			$('#preloader').delay(600).fadeOut(800);
-			$('body').delay(1200).css({'overflow':'visible', 'overflow-x': 'hidden'});
+			$('body').delay(1200).css({'overflow':'visible', 'overflow-x': 'auto'});
 			$(".intro-main p")
 			  .blast({ delimiter: "word" })
 			  .velocity("transition.slideDownIn", {
