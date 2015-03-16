@@ -1,3 +1,10 @@
+@-webkit-keyframes scroll-down {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 10px; }
+  100% {
+    bottom: 0; } }
 p, a, h1, h2, h3, h4, h5, li, span, i {
   -webkit-font-smoothing: antialiased; }
 
@@ -1078,7 +1085,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #f3656a;
+  background-color: #10CBC0;
   z-index: 99999; }
 
 #preloader-status {
@@ -1482,7 +1489,7 @@ header {
   line-height: 44px;
   outline: 0; }
   .btn.btn-main {
-    color: #f3656a;
+    color: #10CBC0;
     background-color: white;
     padding: 0px 20px;
     font-weight: 500;
@@ -1520,7 +1527,7 @@ header {
 
 .intro-1 {
   display: block;
-  background: #f3656a;
+  background: #10CBC0;
   background-size: cover;
   position: relative;
   z-index: 4; }
@@ -1564,8 +1571,11 @@ header {
   .intro-btn-container .arrow {
     display: block;
     color: white;
-    font-size: 2.2em;
-    margin-top: 15px; }
+    font-size: 2.4em;
+    margin-top: 15px;
+    position: relative;
+    -webkit-animation: scroll-down 2s infinite;
+            animation: scroll-down 2s infinite; }
 
 .intro-more {
   width: 100%;

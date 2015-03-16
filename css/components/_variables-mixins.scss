@@ -47,3 +47,15 @@ $blue: #3fa9f5;
   background-image:         linear-gradient(top, $fromColor, $toColor);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
+
+@-webkit-keyframes scroll-down {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
