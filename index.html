@@ -86,12 +86,15 @@
 
 	<section class="intro-1" id="intro-1">
 		<div class="intro-main">
-			<img class="intro-logo" src="img/intro-logo.svg" alt="S3LVA">
-
-			<p>
-				Conectamos marcas vivas con personas.
-				<img src="img/decoration-1.svg" alt="" class="decoration">
-			</p>
+			<div class="intro-centering">
+				<div class="intro-centering-inner">
+					<img class="intro-logo" src="img/intro-logo.svg" alt="S3LVA">
+					<p>
+						Conectamos marcas vivas con personas.
+						<img src="img/decoration-1.svg" alt="" class="decoration">
+					</p>
+				</div>
+			</div>
 
 			<div class="intro-btn-container">
 				<a class="btn btn-main intro-smooth" href="#intro-2-msg" id="intro-main-btn">Hola persona</a>
@@ -106,8 +109,8 @@
 		<div class="intro-2-bgvideo">
 			<!--<video id="bgvideo" autoplay loop>
 				<source src="img/intro1080.mp4" type="video/mp4">
-			</video> -->
-			<div id="bgvideo"></div>
+			</video> 
+			<div id="bgvideo"></div>-->
 		</div>
 
 		<div class="clear-0" id="clear-0"></div>
@@ -467,7 +470,7 @@
 						<div class="pattern-decoration"></div>
 					</div>
 
-					<div class="col-sm-8">
+					<div class="col-sm-7">
 						<div class="parallax-container">
 							<div class="video-container" id="video-responsive-1">
 								<div id="player2"></div>
@@ -476,6 +479,8 @@
 						</div>
 						
 					</div>
+
+					<div class="col-sm-1"></div>
 
 					<div class="col-sm-4">
 						<h2 class="title">
@@ -749,7 +754,7 @@
 	
 	<script src="js/fitvids.js"></script>
 	<script src="js/jquery.appear.js"></script>
-	<!--
+
 	<script>
 		var tag = document.createElement('script');
 
@@ -757,35 +762,36 @@
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-		var player;
+		var player2;
 		function onYouTubeIframeAPIReady() {
-			player = new YT.Player('player', {
+			player2 = new YT.Player('player2', {
 			  height: '315',
 			  width: '420',
 			  videoId: 'SU5feJ2e9oc',
 			  events: {
-			    'onReady': onPlayerReady
+			    'onReady': onPlayerReady2
 			  }
 			});
 		}
 
-		function onPlayerReady() {
+		function onPlayerReady2() {
 			$('#video-responsive-1').fitVids();
 
 			$(document.body).on('appear', '#video-responsive-1', function(e, $affected) {
-		        player.playVideo();
+		        player2.playVideo();
 		    });
 
 		    $(document.body).on('disappear', '#video-responsive-1', function(e, $affected) {
-		        player.pauseVideo();
+		        player2.pauseVideo();
 		    });
 
 		    $('#video-responsive-1').appear();
 		}
 
-	</script> -->
-	
-	<script src="js/jquery.tubular.1.0.js"></script>
+	</script>
+		
+	<script src="js/video.js"></script>
+	<script src="js/bigvideo.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
@@ -796,8 +802,6 @@
 	<script src="js/jquery.blast.min.js"></script>
 	<script src="js/velocity.min.js"></script>
 	<script src="js/velocity.ui.min.js"></script>
-	<!-- <script src="js/debug.addIndicators.min.js"></script> -->
-	<!-- <script src="js/covervid.min.js"></script> -->
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 

@@ -27,6 +27,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/css\/components\/_bigvideo.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/components\/_bigvideo.scss",
+		"outputAbbreviatedPath": "\/css\/css\/_bigvideo.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/css\/components\/_fancybox.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -180,6 +196,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/components\/_variables-mixins.scss",
 		"outputAbbreviatedPath": "\/css\/css\/_variables-mixins.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/css\/components\/_ytplayer.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/components\/_ytplayer.scss",
+		"outputAbbreviatedPath": "\/css\/css\/_ytplayer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -837,17 +869,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/js\/covervid.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/js\/covervid.min.js",
-		"outputAbbreviatedPath": "\/js\/min\/covervid.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
 	"\/js\/debug.addIndicators.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -858,6 +879,49 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
+		},
+	"\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1075,
+		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.png",
+		"outputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/js\/dfcb-BigVideo.js-a979827\/lib\/bigvideo.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/lib\/bigvideo.js",
+		"outputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/lib\/min\/bigvideo-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/dfcb-BigVideo.js-a979827\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/README.md",
+		"outputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/js\/fitvids.js": {
 		"fileType": 64,
@@ -909,17 +973,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.fancybox.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.fancybox.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
-	"\/js\/jquery.tubular.1.0.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/js\/jquery.tubular.1.0.js",
-		"outputAbbreviatedPath": "\/js\/min\/jquery.tubular.1.0-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

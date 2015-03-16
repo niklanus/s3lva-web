@@ -4,6 +4,7 @@ $(window).on("load resize",function(e){
 	$('.intro-1').height(viewportHeight);
 	$('.clear-0').height(viewportHeight);
 	$('#intro-2-msg').height(viewportHeight);
+	// $('#bgvideo').height(viewportHeight);
 
 
 	// $('.intro-2').height(viewportHeight);
@@ -37,9 +38,11 @@ $(window).on("load resize",function(e){
 });
 
 $( document ).ready(function() {
-	//$('#bgvideo').coverVid(1920, 1080);
-	$('#bgvideo').tubular({videoId: 'WklFUDU0u8U'});
+	//$('#bgvideo').tubular({videoId: 'WklFUDU0u8U'});
 
+	var BV = new $.BigVideo();
+    BV.init();
+    BV.show('img/intro1080.mp4',{ambient:true});
 
     $("#fancybox-1").fancybox({
     	type: 'iframe',
@@ -575,7 +578,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1
 
 var scene = new ScrollMagic.Scene({triggerElement: ".proyect-6", triggerHook: "1", offset: 0, duration: vh*2})
 	.setTween(TweenMax.from('#proyects-parallax-6-4', 0.5, {
-    	top: 500
+    	top: 700
 	}))
 	.addTo(controller);
 
