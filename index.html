@@ -210,9 +210,7 @@
 					<div class="col-sm-7">
 
 						<div class="video-container proyects-desktop">
-							<video autoplay loop>
-								<source src="img/work/1.mp4" type="video/mp4">
-							</video>
+							<div id="proyect-1-video-load"></div>
 						</div>
 						
 						<img src="img/work/1-videoimg.jpg" alt="" class="img-responsive proyects-mobile">
@@ -255,9 +253,7 @@
 							<img src="img/work/2-videoimg.jpg" alt="" class="img-responsive proyects-mobile">
 						
 							<div class="video-container proyects-desktop">
-								<video autoplay loop>
-									<source src="img/work/2.mp4" type="video/mp4">
-								</video>
+								<div id="proyect-2-video-load"></div>
 							</div>
 						</div>
 						<div class="righted">
@@ -307,11 +303,8 @@
 
 					<div class="col-sm-7 proyects-desktop">
 						<div class="video-container">
-							<video autoplay loop>
-								<source src="img/work/3.mp4" type="video/mp4">
-							</video>
+							<div id="proyect-3-video-load"></div>
 						</div>
-						
 					</div>
 				</div>
 				
@@ -321,10 +314,8 @@
 						<div class="parallax-container">
 							<img src="img/work/4-3.png" alt="" id="proyects-parallax-4-4" class="proyects-desktop">
 							<div class="video-container">
-								<video autoplay loop>
-									<source src="img/work/4.mp4" type="video/mp4">
-								</video>
-
+								<div id="proyect-4-video-load"></div>
+								
 								<div class="righted">
 									<a href="https://player.vimeo.com/video/29982327?autoplay=1" class="btn btn-proyects" id="fancybox-4">ver</a>
 								</div>
@@ -477,9 +468,7 @@
 					<div class="row cf proyects-desktop">
 						<div class="col-sm-offset-6 col-sm-6 video-col">
 							<div class="video-container">
-								<video autoplay loop>
-									<source src="img/work/7.mp4" type="video/mp4">
-								</video>
+								<div id="proyect-7-video-load"></div>
 								<a href="https://player.vimeo.com/video/17764670?autoplay=1" class="btn btn-proyects" id="fancybox-7">ver</a>
 							</div>
 						</div>
@@ -711,6 +700,16 @@
 			    duration: 2100,
 			    stagger: 90,
 			    delay: 600
+			});
+
+			$("#proyect-1-video-load").load("ajax/proyect-1-video.html", function(){
+				$("#proyect-2-video-load").load("ajax/proyect-2-video.html", function(){
+					$("#proyect-3-video-load").load("ajax/proyect-3-video.html", function(){
+						$("#proyect-4-video-load").load("ajax/proyect-4-video.html", function(){
+							$("#proyect-7-video-load").load("ajax/proyect-7-video.html");
+						});
+					});
+				});
 			});
 		})
 		//]]>
