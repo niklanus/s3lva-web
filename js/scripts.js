@@ -77,6 +77,17 @@ $( document ).ready(function() {
 		}
     });
 
+    $("#fancybox-4-alt").fancybox({
+    	type: 'iframe',
+    	padding: 0,
+    	autoHeight: true,
+    	helpers: {
+		    overlay: {
+		     	locked: false
+		    }
+		}
+    });
+
 	$(".fancybox-5").fancybox({
     	type: 'image',
     	padding: 0,

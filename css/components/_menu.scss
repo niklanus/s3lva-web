@@ -24,6 +24,14 @@
       margin-bottom: 18px;
       font-size: 1.8em;
 
+      @media only screen and (max-width: 460px) {
+        font-size: 1.6em;
+      }
+
+      @media only screen and (max-width: 380px) {
+        font-size: 1.4em;
+      }
+
       a {
         color: white;
         @include hover;

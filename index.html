@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<!--[if IE 8]>    <html lang="en-us" class="ie8"> <![endif]-->
-<!--[if lt IE 9]><!--> <html lang="es" class="ie9plus"> <!--<![endif]-->
+<html lang="es">
 <head>
-	<!-- DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER DANGER -->
-	<meta name="robots" content="noindex" />
-
-
-
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="Conectamos marcas vivas con personas.">	
 	<title>S3LVA</title>
-	<meta name="description" content="Conectamos marcas vivas con personas.">
-
 
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/blueprints.css">
-	<link rel="stylesheet" href="css/components/elegant-icons.css">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.css">
-
-    <!--[if lt IE 9]>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Vollkorn:400italic,700italic,400,700' type='text/css'>
 </head>
 <body>
-
 	<!-- Preloader -->
 	<div id="preloader">
 	    <div id="preloader-status">
-	    	<!-- <div class="logo">
-	    		<img src="img/header-logo.svg" alt="S3LVA">
-	    	</div> -->
-	    	<span></span>
+	    	<div id="preloader-logo"></div>
+	    	<p>cargando...</p>
+			<!-- <span></span> -->
 	    </div>
 	</div>
 
@@ -54,9 +37,6 @@
 
 	<header class="header-fixed">
 		<div class="container cf">
-			<a href="#intro-1" class="header-logo smooth">
-				<img src="img/header-logo.svg" alt="S3LVA">
-			</a>
 			<a class="nav-btn">
 	            <div class="nav-btn-inner">
 	                <span class="nav-btn-1"></span>
@@ -70,7 +50,6 @@
 	<nav class="nav-main">
 		<ul>
 			<li><a href="#mundo">Cómo ser una marca viva</a></li>
-			<li><a href="#aboutus">Sobre Nosotros</a></li>
 			<li><a href="#proyects">Trabajos</a></li>
 			<li class="nav-proyect"><a href="#proyect-1">Smart</a></li>
 			<li class="nav-proyect"><a href="#proyect-2">Apptista</a></li>
@@ -80,6 +59,7 @@
 			<li class="nav-proyect"><a href="#proyect-6">Viral: Zapatilla USB</a></li>
 			<li class="nav-proyect"><a href="#proyect-7">Axe Play</a></li>
 			<li class="nav-proyect last"><a href="#proyect-8">El Oso</a></li>
+			<li><a href="#aboutus">Sobre Nosotros</a></li>
 			<li><a href="#contact">Contacto</a></li>
 		</ul>
 	</nav>
@@ -99,19 +79,12 @@
 			<div class="intro-btn-container">
 				<a class="btn btn-main intro-smooth" href="#intro-2-msg" id="intro-main-btn">Hola persona</a>
 				<a class="arrow intro-smooth" href="#intro-2-msg"><i class="arrow_carrot-down"></i></a>
-				
-
 			</div>
 		</div>
 	</section>
 
 	<section class="intro-2" id="intro-2">
-		<div class="intro-2-bgvideo">
-			<!--<video id="bgvideo" autoplay loop>
-				<source src="img/intro1080.mp4" type="video/mp4">
-			</video> 
-			<div id="bgvideo"></div>-->
-		</div>
+		<div class="intro-2-bgvideo"></div>
 
 		<div class="clear-0" id="clear-0"></div>
 
@@ -125,7 +98,7 @@
 		<div class="part-2" id="intro-2-2-msg">
 			<div class="part-2-1">
 				<div class="container">
-					<p class="p2-text-1">Creamos experiencias que aportan valor a las marcas.</p>
+					<p class="p2-text-1">Creamos experiencias que <span>aportan valor a las marcas.</span></p>
 				</div>
 			</div>
 
@@ -160,16 +133,12 @@
 								<rect id="min" x="48" y="12.5" width="3" height="40"/>
 								</g>
 							</svg>
-
-							
 						</div>
 						<div class="col-xs-8">
 							<strong id="theDate"></strong>
 						</div>
 					</div>
-				</div>
-
-				
+				</div>				
 
 				<div class="points-container cf">
 					<div class="pov cf" id="mundo-pov">
@@ -182,74 +151,34 @@
 					</div>
 
 					<div class="point cf" id="mundo-parallax-3">
-						<div class="row">
-							<p class="number">5</p>
-							<p class="subtitle">innovación</p>
-							<p class="text">Sorprender con nuevas experiencias aprovechando todas las plataformas disponibles.</p>
-						</div>
+						<p class="number">5</p>
+						<p class="subtitle">innovación</p>
+						<p class="text">Sorprender con nuevas experiencias aprovechando todas las plataformas disponibles.</p>
 					</div>
 
 					<div class="point alt cf" id="mundo-parallax-4">
-						<div class="row">
-							<p class="number">4</p>
-							<p class="subtitle">la verdad</p>
-							<p class="text">Autenticidad, transparencia y responsabilidad son valores que los usuarios reclaman a cambio de su lealtad.</p>
-						</div>
+						<p class="number">4</p>
+						<p class="subtitle">la verdad</p>
+						<p class="text">Autenticidad, transparencia y responsabilidad son valores que los usuarios reclaman a cambio de su lealtad.</p>
 					</div>
 
 					<div class="point cf" id="mundo-parallax-5">
-						<div class="row">
-							<p class="number">3</p>
-							<p class="subtitle">relevancia</p>
-							<p class="text">Contar historias que nos conecten emocionalmente con nuestra propia humanidad y den ganas de compartirlas.</p>
-						</div>
+						<p class="number">3</p>
+						<p class="subtitle">relevancia</p>
+						<p class="text">Contar historias que nos conecten emocionalmente con nuestra propia humanidad y den ganas de compartirlas.</p>
 					</div>
 
 					<div class="point alt cf" id="mundo-parallax-6">
-						<div class="row">
-							<p class="number">2</p>
-							<p class="subtitle">simpleza</p>
-							<p class="text">Definir que es lo que se está vendiendo en una forma muy clara. Sin promesas ni adornos.</p>
-						</div>
+						<p class="number">2</p>
+						<p class="subtitle">simpleza</p>
+						<p class="text">Definir que es lo que se está vendiendo en una forma muy clara. Sin promesas ni adornos.</p>
 					</div>
 
 					<div class="point cf" id="mundo-parallax-7">
-						<div class="row">
-							<p class="number">1</p>
-							<p class="subtitle">dar algo a cambio</p>
-							<p class="text">Las marca vivas mejoran la calidad de vida de las personas. Sus acciones son medibles y hacen una diferencia positiva en el mundo real.</p>
-						</div>
+						<p class="number">1</p>
+						<p class="subtitle">dar algo a cambio</p>
+						<p class="text">Las marcas vivas mejoran la calidad de vida de las personas. Sus acciones son medibles y hacen una diferencia positiva en el mundo real.</p>
 					</div>
-
-				</div>
-			</div>
-	</section>
-
-	<section class="aboutus" id="aboutus">
-
-			<div class="container">
-				<h2 class="title">
-					<span id="title-2-1">sobre</span>
-					<span id="title-2-2">nosotros</span>
-				</h2>
-
-				<div class="points-container cf">
-					<div class="subtitle-highlight" id="aboutus-parallax-1">
-						<span class="decoration"></span>
-						<p class="main-text">si te va bien,<br>nos va bien</p>
-						<p class="extra-text">
-							Somos un equipo de expertos en storytelling, geeks y agentes de cambio.<br>
-							Nos asociamos con empresas para posicionar marcas, creando experiencias que aportan una sensacion, vivencia o conocimiento nuevo a la gente que hacen crecer tu negocio.
-						</p>
-					</div>
-
-					<div class="point alt cf" id="aboutus-parallax-2">
-						<div class="subtitle-highlight">
-							<p class="main-text">nuestros<br>clientes</p>
-						</div>
-						<img src="img/clients.png" alt="Arcor, Converse, Del Bajo, Paso de los Toros, Danone, Bodega Navarro Correas, Kidactic, BBVA, Fernet 1882, Smart, BAFWeek, Nike, Coca-Cola, Kotex, BBC" class="clients">
-					</div>
-
 				</div>
 			</div>
 	</section>
@@ -279,11 +208,14 @@
 						smart
 					</h2>
 					<div class="col-sm-7">
-						<div class="video-container">
+
+						<div class="video-container proyects-desktop">
 							<video autoplay loop>
 								<source src="img/work/1.mp4" type="video/mp4">
 							</video>
 						</div>
+						
+						<img src="img/work/1-videoimg.jpg" alt="" class="img-responsive proyects-mobile">
 
 						<div class="centered">
 							<a href="https://www.youtube.com/embed/q-Ftn2qsIQQ?rel=0&autoplay=1" class="btn btn-proyects" id="fancybox-1">ver</a>
@@ -317,10 +249,12 @@
 						<div class="parallax-container">
 							<div>
 								<!--<img src="img/work/2-1.jpg" alt="" id="proyects-parallax-2-3">-->
-								<img src="img/work/2-2.png" alt="" id="proyects-parallax-2-4">
+								<img src="img/work/2-2.png" alt="" id="proyects-parallax-2-4" class="proyects-desktop">
 							</div>
+
+							<img src="img/work/2-videoimg.jpg" alt="" class="img-responsive proyects-mobile">
 						
-							<div class="video-container">
+							<div class="video-container proyects-desktop">
 								<video autoplay loop>
 									<source src="img/work/2.mp4" type="video/mp4">
 								</video>
@@ -359,6 +293,8 @@
 							</span>
 							trova
 						</h2>
+						
+						<img src="img/work/3-videoimg.jpg" alt="" class="img-responsive proyects-mobile" style="margin: 0 auto 40px auto">
 
 						<div class="subtitle-highlight" id="proyects-parallax-3-2">
 							<span class="decoration"></span>
@@ -366,14 +302,10 @@
 							<p class="extra-text">
 								Al final del día, una de cada cinco personas no recuerda dónde estacionó su vehículo. Se desarrolló este modelo de app para Subaru que se comunica automáticamente con el bluetooth del vehículo.
 							</p>
-
-							<!-- <div class="righted">
-								<a href="" class="btn btn-proyects">ver</a>
-							</div> -->
 						</div>
 					</div>
 
-					<div class="col-sm-7">
+					<div class="col-sm-7 proyects-desktop">
 						<div class="video-container">
 							<video autoplay loop>
 								<source src="img/work/3.mp4" type="video/mp4">
@@ -385,14 +317,9 @@
 				
 
 				<div class="proyect proyect-4 cf" id="proyect-4">
-					<!--<div class="proyect-decoration" id="proyects-parallax-4-1">
-						<div class="pattern-decoration"></div>
-					</div>-->
-
-					<div class="col-sm-7">
+					<div class="col-sm-7 proyects-desktop">
 						<div class="parallax-container">
-							<!--<img src="img/work/4-1.jpg" alt="" id="proyects-parallax-4-3">-->
-							<img src="img/work/4-3.png" alt="" id="proyects-parallax-4-4">
+							<img src="img/work/4-3.png" alt="" id="proyects-parallax-4-4" class="proyects-desktop">
 							<div class="video-container">
 								<video autoplay loop>
 									<source src="img/work/4.mp4" type="video/mp4">
@@ -403,7 +330,6 @@
 								</div>
 							</div>
 						</div>
-						
 					</div>
 
 					<div class="col-sm-5">
@@ -412,6 +338,14 @@
 							<span id="title-7-2">cinema</span>
 							<img src="img/decoration-5.svg" alt="" id="proyects-parallax-4-1">
 						</h2>
+
+						<div class="proyects-mobile">
+
+							<div class="righted">
+								<img src="img/work/4-videoimg.jpg" alt="" class="img-responsive proyects-mobile" style="margin: 0 auto">
+								<a href="https://player.vimeo.com/video/29982327?autoplay=1" class="btn btn-proyects" id="fancybox-4-alt" style="margin-top: 20px">ver</a>
+							</div>
+						</div>
 
 						<div class="subtitle-highlight" id="proyects-parallax-4-2">
 							<span class="decoration"></span>
@@ -435,6 +369,8 @@
 							<span id="title-8-1">super</span>
 							<span id="title-8-2">app</span>
 						</h2>
+						
+						<img src="img/work/5-3.jpg" alt="" class="img-responsive proyects-mobile" style="margin: 0 auto 40px auto">
 
 						<div class="subtitle-highlight" id="proyects-parallax-5-2">
 							<span class="decoration"></span>
@@ -457,9 +393,7 @@
 
 					<div class="col-sm-7">
 						<div class="parallax-container">
-							<!--<img src="img/work/5-1.png" alt="" id="proyects-parallax-5-3">
-							<img src="img/work/5-2.jpg" alt="" id="proyects-parallax-5-4">-->
-							<img src="img/work/5-3.jpg" alt="" id="proyects-parallax-5-5">
+							<img src="img/work/5-3.jpg" alt="" id="proyects-parallax-5-5" class="proyects-desktop">
 						</div>
 					</div>
 				</div>
@@ -470,7 +404,7 @@
 						<div class="pattern-decoration"></div>
 					</div>
 
-					<div class="col-sm-7">
+					<div class="col-sm-7 proyects-desktop">
 						<div class="parallax-container">
 							<div class="video-container" id="video-responsive-1">
 								<div id="player2"></div>
@@ -488,6 +422,10 @@
 							<span id="title-9-2">zapatilla</span>
 							<span id="title-9-3">USB</span>
 						</h2>
+						
+						<div class="video-container proyects-mobile" id="video-responsive-2" style="margin-bottom: 40px">
+							<div id="player3"></div>
+						</div>
 
 						<div class="subtitle-highlight" id="proyects-parallax-6-2">
 							<span class="decoration"></span>
@@ -496,10 +434,6 @@
 								Abrimos el laboratorio para crear un dispositivo imposible para Converse. La idea se transformó en un fenómeno viral y aún nos preguntan cómo lo hicimos!
 							</p>
 							<p class="extra-text client"><strong>Cliente: </strong>Converse</p>
-
-							<!--<div class="righted">
-								<a href="" class="btn btn-proyects">ver</a>
-							</div>-->
 						</div>
 					</div>
 				</div>
@@ -516,6 +450,8 @@
 						</span>
 						axe play
 					</h2>
+
+					<img src="img/work/7-videoimg.jpg" alt="" class="img-responsive proyects-mobile" style="margin: 0 auto 40px auto; position: relative; z-index: 10">
 					
 					<div class="row cf">
 						<div class="col-sm-6 col-md-7">
@@ -533,12 +469,12 @@
 							</div>
 						</div>
 
-						<div class="col-sm-6 col-md-5">
+						<div class="col-sm-6 col-md-5 proyects-desktop">
 							<img src="img/work/7-1.png" alt="" id="proyects-parallax-7-3">
 						</div>
 					</div>
 
-					<div class="row cf">
+					<div class="row cf proyects-desktop">
 						<div class="col-sm-offset-6 col-sm-6 video-col">
 							<div class="video-container">
 								<video autoplay loop>
@@ -557,7 +493,7 @@
 					</div>
 					
 					<div class="row cf">
-						<div class="col-sm-7">
+						<div class="col-sm-7 proyects-desktop">
 
 							<div class="parallax-container">
 								<img src="img/work/8-1.jpg" alt="" id="proyects-parallax-8-3">
@@ -566,6 +502,7 @@
 
 						<div class="col-sm-5">
 							<h2 class="title" id="title-11-1">el oso</h2>
+							<img src="img/work/8-1.jpg" alt="" class="img-responsive proyects-mobile" style="margin: 40px auto 40px auto">
 							<div class="subtitle-highlight" id="proyects-parallax-8-2">
 								<span class="decoration"></span>
 								<p class="main-text">un vino nuevo<br>con historia.</p>
@@ -589,7 +526,6 @@
 		
 
 		<!-- CUBE PORTFOLIO -->
-
 		<div class="proyects-more centered">
 			<button class="btn btn-proyects" id="proyects-more-show">
 				+ trabajos
@@ -699,6 +635,34 @@
 
 	</section>
 	
+	<section class="aboutus" id="aboutus">
+
+			<div class="container">
+				<h2 class="title">
+					<span id="title-2-1">sobre</span>
+					<span id="title-2-2">nosotros</span>
+				</h2>
+
+				<div class="points-container cf">
+					<div class="subtitle-highlight" id="aboutus-parallax-1">
+						<span class="decoration"></span>
+						<p class="main-text">si te va bien,<br>nos va bien</p>
+						<p class="extra-text">
+							Somos un equipo de expertos en storytelling, geeks y agentes de cambio.<br>
+							Nos asociamos con empresas para posicionar marcas, creando experiencias que aportan una sensacion, vivencia o conocimiento nuevo a la gente que hacen crecer tu negocio.
+						</p>
+					</div>
+
+					<div class="point alt cf" id="aboutus-parallax-2">
+						<div class="subtitle-highlight">
+							<p class="main-text">nuestros<br>clientes</p>
+						</div>
+						<img src="img/clients.png" alt="Arcor, Converse, Del Bajo, Paso de los Toros, Danone, Bodega Navarro Correas, Kidactic, BBVA, Fernet 1882, Smart, BAFWeek, Nike, Coca-Cola, Kotex, BBC" class="clients">
+					</div>
+
+				</div>
+			</div>
+	</section>
 
 	<section class="contact" id="contact">
 		<div class="contact-title" id="title-12-1">
@@ -731,8 +695,8 @@
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/jquery.easing.js"></script>
-
+	<script src="js/all-plugins.min.js"></script>
+	<script src="js/scripts.js"></script>
 
 	<!-- Preloader -->
 	<script type="text/javascript">
@@ -751,9 +715,6 @@
 		})
 		//]]>
 	</script>
-	
-	<script src="js/fitvids.js"></script>
-	<script src="js/jquery.appear.js"></script>
 
 	<script>
 		var tag = document.createElement('script');
@@ -763,8 +724,18 @@
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 		var player2;
+		var player3;
 		function onYouTubeIframeAPIReady() {
 			player2 = new YT.Player('player2', {
+			  height: '315',
+			  width: '420',
+			  videoId: 'SU5feJ2e9oc',
+			  events: {
+			    'onReady': onPlayerReady2
+			  }
+			});
+
+			player3 = new YT.Player('player3', {
 			  height: '315',
 			  width: '420',
 			  videoId: 'SU5feJ2e9oc',
@@ -775,7 +746,9 @@
 		}
 
 		function onPlayerReady2() {
+			player2.setVolume(0);
 			$('#video-responsive-1').fitVids();
+			$('#video-responsive-2').fitVids();
 
 			$(document.body).on('appear', '#video-responsive-1', function(e, $affected) {
 		        player2.playVideo();
@@ -789,22 +762,5 @@
 		}
 
 	</script>
-		
-	<script src="js/video.js"></script>
-	<script src="js/bigvideo.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/smooth-scroll.min.js"></script>
-	<script src="js/TweenMax.min.js"></script>
-	<script src="js/ScrollMagic.min.js"></script>
-	<script src="js/animation.gsap.min.js"></script>
-	<script src="js/animation.velocity.min.js"></script>
-	<script src="js/jquery.blast.min.js"></script>
-	<script src="js/velocity.min.js"></script>
-	<script src="js/velocity.ui.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-
-	<script src="js/scripts.js"></script>
 </body>
 </html>
