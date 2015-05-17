@@ -203,22 +203,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/components\/_ytplayer.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/components\/_ytplayer.scss",
-		"outputAbbreviatedPath": "\/css\/css\/_ytplayer.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/css\/components\/elegant-icons.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -869,6 +853,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/js\/bigvideo.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/bigvideo.js",
+		"outputAbbreviatedPath": "\/js\/min\/bigvideo-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/debug.addIndicators.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -879,49 +874,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
-		},
-	"\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1075,
-		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.png",
-		"outputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/css\/bigvideo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/js\/dfcb-BigVideo.js-a979827\/lib\/bigvideo.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/lib\/bigvideo.js",
-		"outputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/lib\/min\/bigvideo-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/dfcb-BigVideo.js-a979827\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/README.md",
-		"outputAbbreviatedPath": "\/js\/dfcb-BigVideo.js-a979827\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/js\/fitvids.js": {
 		"fileType": 64,
@@ -1098,6 +1050,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
+		},
+	"\/js\/video.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/video.js",
+		"outputAbbreviatedPath": "\/js\/min\/video-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
